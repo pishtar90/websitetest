@@ -10,7 +10,6 @@ import firstImage2 from '/images/website-hover.png';
 import secondImage from '/images/costum-normal-2.png';
 import secondImage2 from '/images/costum-hover.png';
 import figure from '/images/Frame 118.png';
-import Submenu from '../components/Submenu'
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import GraphicDesignSection from '../components/GraphisDesignSection';
@@ -49,7 +48,6 @@ const Home = () => {
         <div className="font-matt w-full max-w-[1280px] mx-auto text-center my-2">
         <Hero setHeroVisible={setHeroVisible} />
         </div>
-      <Submenu isHeroVisible={isHeroVisible} />
             <section id="Was wir leisten" className='lg:pt-[200px]'>
             <section  className="group font-matt cloudy-section flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] bg-[#FAFAFA] max-w-[1280px] mx-auto my-8 lg:h-[600px]">
             <div className="font-matt md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10 lg:ml-8 lg:mr-12 lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:ml-12">
