@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const services = [
   {
     id: "web-design",
-    heading: "Web design & development",
+    heading: "Web Design & Development",
     description:
       "Crafting digital experiences where beauty meets ROI, turning heads and unlocking revenue potential with every click.",
     tags: [
@@ -46,79 +46,86 @@ const services = [
   },
 ];
 
+// Animation variants for staggered appearance
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const ServicesSection = () => {
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto px-6 lg:px-20">
-        <motion.h2
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-4xl font-bold text-center mb-12"
-        >
-          Our Services
-        </motion.h2>
-        <div className="space-y-12">
-          {services.map((service, index) => (
-            <ServiceCard key={service.id} service={service} index={index} />
-          ))}
-        </div>
+    <section className="relative bg-gradient-to-br from-blue-100 to-blue-200 py-16 overflow-hidden">
+      {/* Title */}
+      <h2 className="text-5xl font-extrabold text-center mb-12 text-blue-900">
+        Our Services
+      </h2>
+
+      {/* Service Cards */}
+      <div className="container mx-auto space-y-12 px-6 lg:px-20">
+        {services.map((service, index) => (
+          <ServiceCard key={service.id} service={service} index={index} />
+        ))}
       </div>
     </section>
   );
 };
 
-const ServiceCard = ({ service, index }) => {
+const ServiceCard = ({ service }) => {
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col lg:flex-row"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.8,
-        delay: index * 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94], // Webflow-like smooth easing
-      }}
-      viewport={{ once: true, amount: 0.2 }}
+      className="group bg-white rounded-xl shadow-lg flex flex-col lg:flex-row overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-500"
+      initial="hidden"
+      whileHover="visible"
+      variants={staggerContainer}
     >
       {/* Text Section */}
-      <div className="lg:w-1/2 p-6 flex flex-col justify-between">
-        <div>
-          <motion.h3
-            className="text-2xl font-bold text-gray-800 mb-4"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.4, duration: 0.8 }}
-          >
-            {service.heading}
-          </motion.h3>
-          <p className="text-gray-600 mb-6">{service.description}</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            {service.tags.map((tag) => (
-              <a
-                key={tag.name}
-                href={tag.link}
-                className="text-blue-500 hover:underline text-sm"
-              >
-                {tag.name}
-              </a>
-            ))}
-          </div>
-        </div>
-        <a
+      <div className="lg:w-1/2 p-6 flex flex-col justify-between relative">
+        <motion.h3
+          className="text-3xl font-bold text-blue-900 mb-4"
+          variants={fadeInUp}
+        >
+          {service.heading}
+        </motion.h3>
+        <motion.p className="text-gray-600 mb-6" variants={fadeInUp}>
+          {service.description}
+        </motion.p>
+        <motion.div
+          className="flex flex-wrap gap-2 mb-6"
+          variants={fadeInUp}
+        >
+          {service.tags.map((tag) => (
+            <a
+              key={tag.name}
+              href={tag.link}
+              className="text-blue-500 hover:underline text-sm"
+            >
+              {tag.name}
+            </a>
+          ))}
+        </motion.div>
+        <motion.a
           href={service.link}
-          className="inline-block mt-4 text-blue-600 hover:text-blue-700 font-semibold"
+          className="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold"
+          variants={fadeInUp}
         >
           Find out more →
-        </a>
+        </motion.a>
       </div>
 
       {/* Video Section */}
       <motion.div
-        className="lg:w-1/2 relative"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: index * 0.6, duration: 0.8 }}
+        className="lg:w-1/2 relative group-hover:scale-105 transition-transform duration-500"
+        whileHover={{ scale: 1.05 }}
       >
         <video
           className="w-full h-full object-cover"
@@ -129,7 +136,7 @@ const ServiceCard = ({ service, index }) => {
         >
           <source src={service.video} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 group-hover:opacity-0 transition-all duration-700"></div>
       </motion.div>
     </motion.div>
   );
