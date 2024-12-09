@@ -10,6 +10,7 @@ import firstImage2 from '/images/website-hover.png';
 import secondImage from '/images/costum-normal-2.png';
 import secondImage2 from '/images/costum-hover.png';
 import figure from '/images/Frame 118.png';
+import Submenu from '../components/Submenu'
 import '../styles/global.css'; 
 import AnimatedSection from '../components/AnimatedSection';
 import GraphicDesignSection from '../components/GraphisDesignSection';
@@ -332,7 +333,7 @@ const Home = () => {
                         </section>
                         <div>
         
-                <section id="Wie wir arbeiten" className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-2 lg:min-w-[1280px] mx-auto lg:pt-[200px]">
+                <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-2 lg:min-w-[1280px] mx-auto lg:pt-[200px]">
                     <div className="font-matt flex-1 max-w-md lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
@@ -427,19 +428,17 @@ const Home = () => {
                     </section>
                 </div>
 
-                <section id="Warum wir begeistern" className="font-matt py-2 bg-white lg:min-w-[1280px] mx-auto lg:pt-[200px]">
+                <section id="Warum wir begeistern" className="font-matt py-2 bg-white lg:min-w-[1280px] mx-auto lg:pt-[300px]">
                 <div className="font-matt text-center mb-12">
                 </div>
 
-                <div className="font-matt max-w-[1280px] grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-2">
-                    <div className="font-matt flex flex-col items-center text-center space-y-7">
+                <div className="font-matt lg:min-w-[1280px] grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-2">
+                    <div className="font-matt flex flex-col items-center text-center space-y-7 lg:mt-[250px]">
                             <svg width="205" height="180" viewBox="0 0 205 180" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path id="Vector" d="M193.735 88.8999L166.459 116.176L141.467 141.168L102.635 180L63.8032 141.168L26.5838 103.949L11.1989 88.564C-2.50641 74.8586 -2.50641 52.7554 11.1989 39.0501L45.4622 4.78679C51.8446 -1.5956 62.1908 -1.5956 68.6404 4.78679L102.635 38.7814L136.361 5.05552C142.743 -1.32687 153.089 -1.32687 159.539 5.05552L193.802 39.3188C207.508 53.0242 207.508 75.1273 193.802 88.8327L193.735 88.8999Z" fill="#E24125"/>
                             </svg>  
                     <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Liebe</h3>
-                    <p className="font-matt text-[#5A585A] lg:text-[20px]">
-                    Leidenschaft treibt alles an, <br></br> was wir tun
-                    </p>
+                
                     </div>
 
                     <div className="font-matt flex flex-col items-center text-center space-y-7">
@@ -462,12 +461,10 @@ const Home = () => {
                         </g>
                     </svg>
                     <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Integrität</h3>
-                    <p className="font-matt text-[#5A585A] lg:text-[20px]">
-                    Transparenz und Vertrauen schaffen langfristige Partnerschaften
-                    </p>
+                  
                     </div>
 
-                    <div className="font-matt flex flex-col items-center text-center space-y-6 mb-12">
+                    <div className="font-matt flex flex-col items-center text-center space-y-6 mb-12 lg:mt-[250px]">
                         <svg width="205" height="180"
                         id="Layer_2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -481,7 +478,6 @@ const Home = () => {
                             </g>
                         </svg>
                     <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Exzellenz</h3>
-                    <p className="text-[#5A585A] lg:text-[20px] font-matt">Qualität liefern, die Erwartungen übertrifft</p>
                     </div>
                 </div>
 
@@ -504,7 +500,6 @@ const Home = () => {
                         </g>
                     </svg>
                     <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Kommunikation</h3>
-                    <p className="font-matt text-[#5A585A] lg:text-[20px]">Klare Dialoge für den <br></br> gemeinsamen Erfolg</p>
                     </div>
 
                     <div className="font-matt flex flex-col items-center text-center space-y-7">
@@ -539,7 +534,6 @@ const Home = () => {
                             </g>
                         </svg>
                     <h3 className="font-matt text-xl lg:text-[28px] leading-[37px] font-extrabold text-black uppercase">Flexibilität</h3>
-                    <p className="text-[#5A585A] lg:text-[20px] font-matt">Agil und bereit für jede <br></br> Herausforderung</p>
                     </div>
                 </div>
                 </section>
@@ -572,20 +566,20 @@ const Home = () => {
                         </svg>
 
                     </div>
-                    <p className="font-matt text-lg md:text-[28px] md:leading-[37px] font-extrabold uppercase mb-12 mt-10">
+                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase mb-12 mt-10">
                     Unserer Kunden empfehlen uns weiter
                     </p>
                 </div>
 
                 {/* 3 Länder Section */}
-                <div className="font-matt flex flex-col md:flex-row items-center justify-center text-center md:text-left space-y-8  md:space-x-28 px-4 lg:px-0">
+                <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-8  lg:space-x-28 px-4 lg:px-0">
                 {/* Left Text */}
-                <div className="font-matt text-lg md:text-[28px] md:leading-[37px] font-extrabold uppercase ">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase ">
                 <p>Bereits in</p>
                 </div>
 
                 {/* SVG */}
-                <div className="font-matt w-full max-w-[100px] md:max-w-[150px]">
+                <div className="font-matt w-full max-w-[100px] lg:max-w-[150px]">
                     <svg
                     className="responsive-svgg"
                     viewBox="0 0 264 299"
@@ -612,13 +606,13 @@ const Home = () => {
                 </div>
 
                 {/* Right Text */}
-                <div className="font-matt text-lg md:text-[28px] md:leading-[37px] font-extrabold uppercase md:px-[40px]">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase lg:px-[40px]">
                 <p>Länder vertreten und weiter wachsend</p>
                 </div>
             </div>
 
                 {/* Hat and 14 Section */}
-                <div className="font-matt grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center px-4 lg:px-0 lg:mr-[100px]">
+                <div className="font-matt grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center px-4 lg:px-0 lg:mr-[100px]">
                 {/* Hat Section */}
                 <div className="font-matt flex flex-col items-center text-center space-y-4 mb-10">
                 <div className="w-full max-w-[100px] md:max-w-[150px]">
@@ -632,17 +626,17 @@ const Home = () => {
                     <path d="M142.831 191.296L134.706 195.659L126.581 191.296L53.1172 151.852V204.687L134.706 248.495L216.295 204.687V151.852L142.831 191.296Z" fill="#0009FF"/>
                     </svg>
                     </div>
-                    <p className="font-matt text-lg md:text-[28px] md:leading-[37px] font-extrabold mt-4 uppercase">
+                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold mt-4 uppercase">
                     Gründung der <br></br>The Eksperts Academy
                     </p>
                 </div>
 
                 {/* 14 Section */}
-                <div className="font-matt flex flex-col items-center text-center lg:text-left space-y-4 md:space-x-32">
-                    <div className="w-full flex md:justify-center items-center">
-                        <div className="w-full max-w-[80px] sm:max-w-[100px] md:max-w-[150px]">
+                <div className="font-matt flex flex-col items-center text-center md:text-left space-y-4 md:space-x-32">
+                    <div className="w-full flex lg:justify-center items-center">
+                        <div className="w-full max-w-[80px] sm:max-w-[100px] lg:max-w-[150px]">
                         <svg
-                            className="custom-svg-472 mx-[-70px] lg:mx-[-100px] items-center md:justify-center lg:mt-[-80px] "
+                            className="custom-svg-472 mx-[-70px] md:mx-[-100px] items-center md:justify-center lg:mt-[-80px] "
                             viewBox="0 0 472 267"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -667,7 +661,7 @@ const Home = () => {
                         </svg>
                         </div>
                     </div>
-                    <p className="font-matt text-base sm:text-lg md:text-[28px] md:leading-[37px] font-extrabold mt-4 uppercase text-center lg:text-left">
+                    <p className="font-matt text-base sm:text-lg lg:text-[28px] lg:leading-[37px] font-extrabold mt-4 uppercase text-center lg:text-left">
                         Erfolgreiche Projekte in <br></br>den letzten 12 Monaten
                     </p>
                     </div>
@@ -675,7 +669,7 @@ const Home = () => {
             </div>
             </section>
 
-            <section className="bg-white py-16 lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[200px] lg:mb-[200px]">
+            <section className="bg-white py-16 lg:py-2 flex flex-col lg:flex-row justify-between items-center lg:min-w-[1280px] mx-auto font-matt space-y-8 lg:space-y-0 lg:mt-[300px] lg:mb-[300px]">
             {/* Left Section: Heading */}
             <div className="flex-1 text-center lg:text-left lg:min-w-[490px]">
                 <h1 className="text-4xl lg:text-7xl font-bold leading-tight">
