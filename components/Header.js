@@ -42,7 +42,7 @@ const Header = () => {
         </div>
 
         {/* Main Navigation */}
-        <nav className="hidden md:flex space-x-6 bg-[#EEE] px-8 py-4 rounded-[10px] relative">
+        <nav className="hidden md:flex space-x-6 px-8 py-4 rounded-[10px] relative">
           <Link href="/" className="text-gray-700">Home</Link>
           <span className="text-gray-300">|</span>
           
@@ -109,11 +109,16 @@ const Header = () => {
         </nav>
 
         {/* Call to Action */}
-        <Link href="https://calendly.com/fisnik-salihu-the-eksperts/30min">
-          <button className="hidden lg:block border-[3px] border-[#0009FF] text-[#0009FF] px-4 py-2 rounded-[20px] text-[18px] font-semibold hover:bg-[#0009FF] hover:text-white">
-          Jetzt Gespräch buchen
-          </button>
-        </Link>
+        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hide-on-mobile">
+  <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
+    <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3"/>
+    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold">
+      Jetzt Gespräch buchen
+    </text>
+  </svg>
+</a>
+
+
 
         {/* Mobile Menu Toggle */}
         <button
