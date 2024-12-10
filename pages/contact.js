@@ -89,7 +89,7 @@ export default function Contact() {
             question: 'Wie kann ich ein Projekt mit the eksperts starten?',
             answer: `
               Jedes Projekt beginnt mit einem ersten Gespräch. Dieses können Sie ganz einfach über unsere Website starten: <br />
-              • <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" target="_blank" class="text-blue-500 hover:underline">Buchen Sie direkt einen Termin über Calendly</a><br />
+              • Buchen Sie direkt einen Termin über <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" target="_blank" class="text-blue-500 hover:underline"> Calendly</a><br />
               • Schreiben Sie uns an <a href="mailto:info@the-eksperts.com" class="text-blue-500 hover:underline">info@the-eksperts.com</a><br />
               • Nutzen Sie unser <a href="/contact" class="text-blue-500 hover:underline">Kontaktformular</a><br />
               Unser Ansatz: Ein Projekt beginnt stets mit dem Verstehen und endet mit dem Erklären. Dazwischen arbeiten wir mit vollem Einsatz daran, die bestmögliche Lösung für Ihr Anliegen zu entwickeln und umzusetzen.
@@ -102,12 +102,24 @@ export default function Contact() {
           },
           {
             question: 'Wie stellt the eksperts die Qualität und den Erfolg von Projekten sicher?',
-            answer: `Qualität und Erfolg stehen bei uns an erster Stelle. Wir stellen dies sicher, indem wir:
-            • Einen klaren und transparenten Plan für jedes Projekt erstellen.
-            • Eng mit unseren Kunden zusammenarbeiten, um ihre Bedürfnisse genau zu verstehen.
-            • Regelmässige Feedbackschleifen einbauen, um sicherzustellen, dass das Projekt auf Kurs bleibt.
-            • Am Ende des Projekts sicherstellen, dass der Kunde die Lösung versteht und sie nahtlos in den Alltag integrieren kann.
-            Unsere Philosophie: Qualität entsteht durch Kommunikation, Innovation und Engagement – und genau das bringen wir in jedes Projekt ein.`,
+            answer: `<div>
+              <p style="font-size: 1em; margin-bottom: 5px;">
+                Qualität und Erfolg stehen bei uns an erster Stelle.
+              </p>
+              <p style="font-size: 1em; margin-bottom: 5px;  font-weight: bold;">
+                Wir stellen dies sicher, indem wir:
+              </p>
+              <ul style="list-style-type: square; padding-left: 20px; margin-bottom: 20px;">
+                <li>Einen klaren und transparenten Plan für jedes Projekt erstellen.</li>
+                <li>Eng mit unseren Kunden zusammenarbeiten, um ihre Bedürfnisse genau zu verstehen.</li>
+                <li>Regelmäßige Feedbackschleifen einbauen, um sicherzustellen, dass das Projekt auf Kurs bleibt.</li>
+                <li>Am Ende des Projekts sicherstellen, dass der Kunde die Lösung versteht und sie nahtlos in den Alltag integrieren kann.</li>
+              </ul>
+              <p style="font-size: 1em;">
+                <strong>Unsere Philosophie: </strong> Qualität entsteht durch Kommunikation, Innovation und Engagement – und genau das bringen wir in jedes Projekt ein.
+              </p>
+            </div>
+            `,
           },
           {
             question: 'Welche Informationen oder Voraussetzungen muss ich als Kunde mitbringen, um ein Projekt zu starten?',
@@ -127,25 +139,24 @@ export default function Contact() {
     return (
       <div className="bg-white min-h-screen p-4 text-gray-900 font-matt">
         {/* Contact Form Section */}
-              <div className="font-matt flex flex-col lg:flex-row items-center justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">
+              <div className="font-matt flex flex-col lg:flex-row items-top justify-between max-w-[1280px] mx-auto space-y-10 lg:space-y-0 lg:space-x-16">
           {/* Left Side: Text */}
           <div className="lg:w-1/2 space-y-10">
-            <h1 className="text-5xl font-extrabold leading-tight text-gray-800">
+            <h1 className="text-5xl lg:text-[80px] font-normal lg:leading-[85px] leading-tight text-gray-800">
               Wir freuen uns auf Ihre Nachricht
             </h1>
-            <p className="text-gray-700 text-lg">
-              Grosse Projekte starten mit einem Gespräch. Lassen Sie uns gemeinsam
-              beginnen.
-            </p>
+           
             <div className="bg-[#FAFAFA] p-4 rounded-[20px] space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src="/images/FisnikSalihu.jpg"
+                  src="/images/FisnikSalihu-theeksperts.png"
                   alt="Fisnik Salihu"
-                  className="rounded-full w-20 h-20 object-cover border-4 border-[#0009FF] "
+                  className="rounded-full w-20 h-20 object-cover border-2 border-[#0009FF] "
                 />
                 <h2 className="font-semibold text-xl">
-                  Hi, Ich bin Fisnik! Lass uns gemeinsam über Ihr Projekt sprechen.
+                   Hi, Ich bin Fisnik!
+                  Lassen Sie uns gemeinsam
+                  über Ihr Projekt sprechen.
                 </h2>
               </div>
               <p className=" text-gray-600">
@@ -280,7 +291,7 @@ export default function Contact() {
               onChange={handleChange}
               required
               className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
-              placeholder="z.B. Wir brauchen eine digitale Platform"
+              placeholder="z.B. Wir brauchen eine digitale Plattform"
               rows="4"
             ></textarea>
           </div>
