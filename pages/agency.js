@@ -88,7 +88,7 @@ const Agency = () => {
                   <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-extrabold uppercase mb-2">{person.name}</h3>
                     <p className="font-matt text-sm md:text-[18px] md:leading-[20px] font-normal mb-2">{person.title}</p>
                     <p className="font-matt text-sm md:text-[14px] md:leading-[18px] font-light mb-2">{person.description}</p>
-                    <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-italic">{person.shortDescription}</p>
+                    <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-light italic">{person.shortDescription}</p>
                     <div className="lg:mt-6 flex space-x-4">
                     <a href={person.linkedin} className="text-blue-500">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">
@@ -118,7 +118,7 @@ const Agency = () => {
                 {/* Values List */}
                 <div className="flex flex-col items-center space-y-10 ">
                   {/* Love */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2">
+                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
                     <div className="flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -161,7 +161,7 @@ const Agency = () => {
                   </div>
 
                   {/* Excellence */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[40px]">
+                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
                     <div className="flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -182,7 +182,7 @@ const Agency = () => {
                   </div>
 
                   {/* Communication */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[40px]">
+                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
                     <div className="flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -205,7 +205,7 @@ const Agency = () => {
                   </div>
 
                   {/* Flexibility */}
-                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[20px]">
+                  <div className="flex items-start space-x-6 max-w-[800px] mb-2 lg:ml-[65px]">
                     {/* Icon */}
                     <div className="flex-shrink-0 w-[110px] h-[110px]">
                       <img
@@ -323,8 +323,8 @@ const Agency = () => {
                     </section>
                     </div>
 
-                    <section className="px-6 lg:px-12 py-2">
-                    <div className="lg:max-w-[1280px] mx-auto md:text-center">
+                    <section className="px-6 lg:px-4 py-2">
+                    <div className="lg:min-w-[1280px] mx-auto md:text-center">
                       {/* Section Header */}
                       <h2 className="font-matt text-xl lg:text-[80px] lg:leading-[80px] font-bold text-black mb-12">
                       Unser Engagement für Gutes!
@@ -363,10 +363,11 @@ const Agency = () => {
                             Förderung von Talenten
                            </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
-                          Mit der Gründung der eksperts Academy unterstützen
-                          wir die nächste Generation von Fachkraeften durch
-                          Zugang zu Wissen und Ressourcen.
-
+                          Mit der Gründung der eksperts
+                          Academy unterstützen wir die
+                          nächste Generation von
+                          Fachkräften durch Zugang zu
+                          Wissen und Ressourcen.
                           </p>
                         </div>
                         <div className="flex-shrink-0 flex flex-col justify-center items-center w-full sm:w-1/3 mb-4">
@@ -389,7 +390,10 @@ const Agency = () => {
                             Unterstützung lokaler Unternehmen
                           </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
-                            Wir helfen kleineren Unternehmen nicht nur mit finanziellen Mitteln, sondern auch durch unsere personellen Ressourcen und die Infrastruktur unserer Firma, um ihre Ideen und Projekte zu realisieren.
+                          Wir helfen kleineren Unternehmen nicht
+                          nur mit finanziellen Mitteln, sondern auch
+                          durch unsere personellen Ressourcen, um
+                          ihre Ideen und Projekte zu realisieren.   
                           </p>
                         </div>
                         <div className="flex-shrink-0 flex flex-col justify-center items-center w-full sm:w-1/3 mb-4">
@@ -400,9 +404,10 @@ const Agency = () => {
                             Nachhaltige Zukunft
                           </h2>
                           <p className="text-[17px] text-black mb-4 font-matt text-center">
-                              Erfolg bedeutet für uns, etwas zurückzugeben und
-                              gemeinsam Innovation und Wachstum in unserer
-                              Region zu fördern.
+                          Erfolg bedeutet für uns, etwas
+                          zurückzugeben und gemeinsam
+                          Innovation und Wachstum in unserer
+                          Region zu fördern.
                           </p>
                         </div>
                       </div>
