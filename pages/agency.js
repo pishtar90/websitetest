@@ -132,9 +132,8 @@ const Agency = () => {
                       <h3 className="text-2xl leading-10 font-bold text-[#E24125] uppercase md:leading-[60px] md:text-[32px]">
                         ● LIEBE :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px]">
-                      Leidenschaft treibt alles an,
-                      was wir tun
+                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
+                      Leidenschaft treibt alles an, was wir tun
                       </p>
                     </div>
                   </div>
@@ -155,7 +154,7 @@ const Agency = () => {
                         ● Integrität
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px]">
+                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
                       Transparenz und Vertrauen schaffen langfristige Partnerschaften
                       </p>
                     </div>
@@ -177,7 +176,7 @@ const Agency = () => {
                         ● Exzellenz
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px]">
+                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
                       Qualität liefern, die Erwartungen übertrifft</p>
                     </div>
                   </div>
@@ -198,7 +197,7 @@ const Agency = () => {
                         ● Kommunikation
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px]">
+                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
                       Klare Dialoge für den
                       gemeinsamen Erfolg</p>
                     
@@ -222,10 +221,9 @@ const Agency = () => {
 
                         :
                       </h3>
-                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px]">
+                      <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
                       Agil und bereit für jede
                       Herausforderung</p>
-                    
                     </div>
                   </div>
                 </div>
