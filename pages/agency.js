@@ -37,7 +37,7 @@ const Agency = () => {
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
-          className="font-matt  lg:text-[80px] text-[30px] flex justify-center text-center font-black lg:leading-[100px] leding-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[200px] lg:mt-[200px]"
+          className="font-matt  lg:text-[80px] text-[30px] flex justify-center text-center font-[900] lg:leading-[100px] leding-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[200px] lg:mt-[200px]"
           style={{
             textAlign: "center",
             textTransform: "uppercase",
