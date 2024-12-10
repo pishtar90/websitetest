@@ -108,8 +108,7 @@ const Footer = () => {
             <button type="submit" className="font-matt text-xl font-bold">→</button>
           </form>
           <div className="font-matt font-bold mb-4 text-[20px] leading-[33px] mt-[40px]">
-            <h2>Schauen Sie vorbei
-            .<br></br>
+            <h2>Schauen Sie vorbei.<br></br>
             Follow & Like nicht vergessen!</h2>
           </div>
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 justify-center items-center md:items-left md:justify-start">
