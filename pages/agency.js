@@ -3,31 +3,32 @@ const Agency = () => {
   const management = [
     {
       name: "Fisnik Salihu",
-      title: "Geschäftsführer",
-      description:"Kurz und prägnant, z. B. „E-Commerce-Strategie“ oder „Backend-Entwicklung“.",
-      shortDescription:"“Ein persönlicher Satz, der Persönlichkeit und Arbeitsweise widerspiegelt.”",
-      background: "/images/Frame 97.png",
-      linkedin: "#",
-      email:"",
+      title: "Co-Founder & strategy ekspert",
+      description:"Spezialgebiet: Strategie, Digitalisierung und Verkauf/Marketing",
+      shortDescription:"“Ich glaube daran, dass jede Herausforderung eine Chance für Innovation und Wachstum ist. Gemeinsam mit meinem Team täglich Lösungen zu schaffen, die nicht nur funktionieren, sondern nachhaltig beeindrucken und begeistern, ist für mich ein Privileg.”",
+      background: "/images/Fisnik-theeksperts.jpg",
+      linkedin: "https://www.linkedin.com/in/fisnik-salihu/",
+      email:"fisnik.salihu@the-eksperts.com",
     },
     {
-      name: "Pishtar Salihu",
-      title: "Geschäftsführer",
-      description:"Kurz und prägnant, z. B. „E-Commerce-Strategie“ oder „Backend-Entwicklung“.",
-      shortDescription:"“Ein persönlicher Satz, der Persönlichkeit und Arbeitsweise widerspiegelt.”",
-      background: "/images/Frame 97.png",
-      linkedin: "#",
-      email:"",
+      name: "Petrit Baralija",
+      title: "Co-Founder & delivery ekspert",
+      description:"Spezialgebiet: CRM, Digitalisierung, Agiles Projektmanagement.",
+      shortDescription:"“Professionelle Arbeit muss nicht kompliziert sein – Effizienz entsteht durch Expertise und klare Kommunikation”",
+      background: "/images/Petrit-theeksperts.png",
+      linkedin: "https://www.linkedin.com/in/petrit-baralija-29681218a/",
+      email:"petrit.baralija@the-eksperts.com",
 
     },
     {
-      name: "Fisnik Salihu",
-      title: "Geschäftsführer",
-      description:"Kurz und prägnant, z. B. „E-Commerce-Strategie“ oder „Backend-Entwicklung“.",
-      shortDescription:"“Ein persönlicher Satz, der Persönlichkeit und Arbeitsweise widerspiegelt.”",
-      background: "/images/Frame 97.png",
-      linkedin: "#",
-      email:"",
+      name: "Pishtar Salihu",
+      title: "Co-Founder & business ekspert",
+      description:"Spezialgebiet: Finanzen, Business Analyse, Projekt Leitung",
+      shortDescription:"“Grosse Dinge entstehen, wenn man Schritt für Schritt vorgeht und auf eine Zusammenarbeit baut, die von Vertrauen getragen wird. Nachhaltige Lösungen entstehen, wenn Ansätze wirtschaftlich durchdacht und langfristig tragfähig sind.”",
+      background: "/images/Pishtar-theeksperts.jpg",
+      linkedin: "https://www.linkedin.com/in/pishtar-salihu-747b64259/",
+      email:"pishtar.salihu@the-eksperts.com",
+
     },
   ];
 
@@ -51,18 +52,11 @@ const Agency = () => {
 
       {/* Description Section */}
       <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-gray-700 lg:mb-[200px]">
-        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[800px] mx-auto">
-          Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt
-          sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen
-          zu finden und uns weiterzuentwickeln. Unser Name steht für den
-          Anspruch, ständig besser zu werden.
+        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto">
+        Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
-        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[800px] mx-auto mt-6">
-          Wir stellen Menschen und Prozesse in den Mittelpunkt. Nachdem wir
-          unsere Kunden und ihre Herausforderungen verstanden haben, entwickeln
-          wir innovative Lösungen, die Wachstum und Effizienz fördern. So
-          helfen wir Unternehmen, in einer schnelllebigen digitalen Welt
-          erfolgreich zu sein.
+        <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto mt-6">
+        Wir stellen Menschen und Prozesse in den Mittelpunkt. Nachdem wir unsere Kunden und ihre Herausforderungen verstanden haben, entwickeln wir innovative Lösungen, die Wachstum und Effizienz fördern. So helfen wir Unternehmen, in einer schnelllebigen digitalen Welt erfolgreich zu sein.
         </p>
       </div>
 
@@ -91,10 +85,10 @@ const Agency = () => {
                     style={{ clipPath: 'polygon(100% 0%, 94% 98%, 0% 100%, 0% 0%)' }}
                   >
 
-                  <h3 className="font-matt text-xl md:text-[28px] md:leading-[30px] font-extrabold uppercase mb-2">{person.name}</h3>
-                    <p className="font-matt text-sm md:text-[20px] md:leading-[30px] font-normal mb-2">{person.title}</p>
-                    <p className="font-matt text-sm md:text-[16px] md:leading-[18px] font-light mb-4">{person.description}</p>
-                    <p className="font-matt text-xs md:text-[14px] md:leading-[18px] font-italic">{person.shortDescription}</p>
+                  <h3 className="font-matt text-xl md:text-[28px] md:leading-[20px] font-extrabold uppercase mb-2">{person.name}</h3>
+                    <p className="font-matt text-sm md:text-[18px] md:leading-[20px] font-normal mb-2">{person.title}</p>
+                    <p className="font-matt text-sm md:text-[14px] md:leading-[18px] font-light mb-2">{person.description}</p>
+                    <p className="font-matt text-xs md:text-[12px] md:leading-[14px] font-italic">{person.shortDescription}</p>
                     <div className="lg:mt-6 flex space-x-4">
                     <a href={person.linkedin} className="text-blue-500">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">
