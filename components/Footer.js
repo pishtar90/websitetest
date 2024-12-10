@@ -13,8 +13,7 @@ const Footer = () => {
         {/* Contact Section */}
         <div>
           <h2 className="font-matt font-extrabold text-[28px] mb-4 " >the eksperts unterstützt Sie
-          gerne bei Ihrem Vorhaben
-          .</h2>
+          gerne bei Ihrem Vorhaben.</h2>
           <Link href="/contact">
           <button className="group relative font-matt flex items-center justify-center px-1 py-1 bg-transparent border-2 border-[#0009FF] text-[#0009FF] rounded-[10px] font-medium text-[20px] transition duration-100 ease-in-out overflow-hidden">
             {/* SVG Background */}
