@@ -202,9 +202,12 @@ export default function Contact() {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
+                onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
+                onInput={(e) => e.target.setCustomValidity("")}
                 className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
                 placeholder="Ihr Name"
               />
+
             </div>
             <div className="w-full">
               <label className="block text-sm font-semibold mb-1">Unternehmen</label>
@@ -214,6 +217,8 @@ export default function Contact() {
                 value={formData.lastName}
                 onChange={handleChange}
                 required
+                onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
+                onInput={(e) => e.target.setCustomValidity("")}
                 className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
                 placeholder="Ihr Unternehmen"
               />
@@ -229,6 +234,8 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
+              onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
+              onInput={(e) => e.target.setCustomValidity("")}
               className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
               placeholder="Ihre E-Mail Adresse"
             />
@@ -290,6 +297,8 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
+              onInvalid={(e) => e.target.setCustomValidity("Bitte ausfüllen.")}
+              onInput={(e) => e.target.setCustomValidity("")}
               className="w-full border border-gray-300 rounded-[20px] p-4 focus:border-blue-500 focus:ring-0"
               placeholder="z.B. Wir brauchen eine digitale Plattform"
               rows="4"
