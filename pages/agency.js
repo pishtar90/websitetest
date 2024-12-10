@@ -6,7 +6,7 @@ const Agency = () => {
       title: "Co-Founder & strategy ekspert",
       description:"Spezialgebiet: Strategie, Digitalisierung und Verkauf/Marketing",
       shortDescription:"“Ich glaube daran, dass jede Herausforderung eine Chance für Innovation und Wachstum ist. Gemeinsam mit meinem Team täglich Lösungen zu schaffen, die nicht nur funktionieren, sondern nachhaltig beeindrucken und begeistern, ist für mich ein Privileg.”",
-      background: "/images/Fisnik-theeksperts.jpg",
+      background: "/images/Fisnik-theeksperts.png",
       linkedin: "https://www.linkedin.com/in/fisnik-salihu/",
       email:"fisnik.salihu@the-eksperts.com",
     },
@@ -25,7 +25,7 @@ const Agency = () => {
       title: "Co-Founder & business ekspert",
       description:"Spezialgebiet: Finanzen, Business Analyse, Projekt Leitung",
       shortDescription:"“Grosse Dinge entstehen, wenn man Schritt für Schritt vorgeht und auf eine Zusammenarbeit baut, die von Vertrauen getragen wird. Nachhaltige Lösungen entstehen, wenn Ansätze wirtschaftlich durchdacht und langfristig tragfähig sind.”",
-      background: "/images/Pishtar-theeksperts.jpg",
+      background: "/images/Pishtar-theeksperts.png",
       linkedin: "https://www.linkedin.com/in/pishtar-salihu-747b64259/",
       email:"pishtar.salihu@the-eksperts.com",
 
