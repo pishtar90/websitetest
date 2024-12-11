@@ -84,7 +84,7 @@ const SVGAnimation = () => {
         </div>
   
         {/* Button Section */}
-        <div className="relative z-20 mt-6 md:absolute md:top-1/2 md:right-[0.5%] md:transform md:-translate-y-1/2">
+        <div className="relative z-20 mt-4 md:absolute md:top-1/2 md:right-[0.5%] md:transform md:-translate-y-1/2">
           <button
             onClick={() => setIsModalOpen(true)}
             className="font-matt md:w-[300px] md:h-[100px] px-8 sm:px-10 py-8 sm:py-5 text-2xl md:text-[70px] font-bold text-white bg-black rounded-full shadow-lg hover:bg-gray-800 transition duration-300"
@@ -103,11 +103,11 @@ const SVGAnimation = () => {
       {/* Funnel Modal */}
       {isModalOpen && (
             <div
-            onClick={() => setIsModalOpen(false)} // Close modal on click outside
+            onClick={() => setIsModalOpen(false)}
             className="p-4 fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
             >          
             <div
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+              onClick={(e) => e.stopPropagation()}
               className="bg-white rounded-[20px] p-8 w-full lg:max-w-[1280px] lg:max-h-[690px] relative"
             >
                <button
@@ -117,24 +117,40 @@ const SVGAnimation = () => {
                     &times;
                   </button>
                     {currentScreen === 1 && (
-                    <div className="flex flex-col lg:flex-col items-center justify-between space-y-6 lg:space-y-0 lg:space-x-6 md:mb-[100px]">
+                    <div className="flex flex-col lg:flex-col items-center justify-between space-y-6 lg:space-y-0 lg:space-x-4 md:mb-[10px]">
                       {/* Progress Bar */}
-                      <div className="w-full flex flex-col items-center lg:items-center md:mt-[40px] md:mb-[60px]">
-                        <div className="flex items-center space-x-2 mb-4">
+                      <div className="flex items-center space-x-2 mb-2">
                           <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">01</span>
                           <span className="md:text-[28px]">/</span>
                           <span className="text-lg md:text-[28px] font-semibold">04</span>
                         </div>
-                        <div className="lg:w-[550px] w-full mb-[20px] bg-gray-300 rounded-full h-4 md:mb-[100px]">
+                        <div className="lg:w-[550px] w-full mb-[30px] bg-gray-300 rounded-full h-4">
                           <div
                             className="bg-[#0009FF] h-4 rounded-full"
                             style={{ width: '25%' }} 
                           ></div>
                         </div>
+                      
+
+                      {/* Video Section */}
+                      <div className="w-full flex justify-center mb-8 relative group">
+                        <video
+                          className="w-full lg:w-[800px]"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                        >
+                          <source src="/images/Part 1.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        {/* Invisible Overlay */}
+                        <div className="absolute inset-0 bg-transparent group-hover:bg-transparent cursor-default"></div>
                       </div>
 
-                       {/* Left Section */}
-                       <div className="lg:w-[800px]">
+
+                      {/* Left Section */}
+                      <div className="lg:w-[1200px]">
                         <h2 className="text-xl font-extrabold mb-2 text-center uppercase md:text-[28px] md:leading-[37px] font-matt">
                           Wir nehmen uns die Zeit, Ihr Projekt und Ihre Anforderungen zu verstehen.
                         </h2>
@@ -149,7 +165,7 @@ const SVGAnimation = () => {
                     {currentScreen === 2 && (
                       <div className="flex flex-col items-center space-y-6">
                          {/* Progress Bar */}
-                      <div className="w-full flex flex-col items-center lg:items-center md:mt-[40px] md:mb-[100px]">
+                      <div className="w-full flex flex-col items-center lg:items-center  md:mb-[10px]">
                         <div className="flex items-center space-x-2 mb-4">
                           <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">02</span>
                           <span className="md:text-[28px]">/</span>
@@ -164,120 +180,155 @@ const SVGAnimation = () => {
                       </div>
 
                         {/* Main Content */}
-                        <div className="text-center lg:w-[800px]">
-                          <h3 className="text-xl font-extrabold text-center uppercase md:text-[28px] md:leading-[37px] font-matt mb-8">
-                            Was möchten Sie mit unserer Unterstützung erreichen?
-                          </h3>
-                          <form className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 md:mb-[90px]" >
-                            <div className="space-y-4">
-                              <label className="flex items-center space-x-3">
-                                <input
-                                  type="checkbox"
-                                  className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                />
-                                <span>Website erstellen oder optimieren</span>
-                              </label>
-                              <label className="flex items-center space-x-3">
-                                <input
-                                  type="checkbox"
-                                  className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                />
-                                <span>Salesforce-Lösungen implementieren</span>
-                              </label>
-                              <label className="flex items-center space-x-3 ">
-                                <input
-                                  type="checkbox"
-                                  className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                />
-                                <span>Individuelle Softwareentwicklung</span>
-                              </label>
-                            </div>
+                        <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-16">
+                                {/* Video Section */}
+                                <div className="w-full lg:w-1/2 flex justify-center">
+                                  <video
+                                    className="w-full lg:w-[600px] "
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                  >
+                                    <source src="/images/Part 2.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                                </div>
 
-                            <div className="space-y-4">
-                              <label className="flex items-center space-x-3">
-                                <input
-                                  type="checkbox"
-                                  className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                />
-                                <span>Online-Shop aufbauen</span>
-                              </label>
-                              <label className="flex items-center space-x-3 ">
-                                <input
-                                  type="checkbox"
-                                  className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                />
-                                <span>IT-Architektur oder Netzwerk optimieren</span>
-                              </label>
-                              <label className="flex items-center space-x-3">
-                                <span>Sonstiges</span>
-                                <input
-                                  type="text"
-                                  className="w-full h-6 text-black border-2 border-gray-300 rounded"
-                                />
-                              </label>
+                                {/* Form Section */}
+                                <div className="w-full lg:w-1/2 text-center lg:text-left">
+                                  <form className="grid grid-cols-1 gap-6 mb-8 md:mb-[10px]">
+                                    <div className="space-y-4">
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[20px] ">Website erstellen oder optimieren</span>
+                                      </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[20px] " >Salesforce-Lösungen implementieren</span>
+                                      </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[20px] ">Individuelle Softwareentwicklung</span>
+                                      </label>
+                                    </div>
 
-                            </div>
-                          </form>
+                                    <div className="space-y-4">
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[20px] ">Online-Shop aufbauen</span>
+                                      </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="checkbox"
+                                          className="w-6 h-6 text-[#0009FF] border-gray-300 rounded-lg focus:ring-[#0009FF]"
+                                        />
+                                        <span className="lg:text-[20px]">IT-Architektur oder Netzwerk optimieren</span>
+                                      </label>
+                                      <label className="flex items-center space-x-3">
+                                        <input
+                                          type="text"
+                                          className="w-full lg:w-[450px] h-10 text-black border-2 border-gray-300 focus:ring-[#0009FF] rounded-lg px-3"
+                                          placeholder="Sonstiges (Freitextfeld)"
+                                        />
+                                      </label>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
 
-                        </div>
                       </div>
                     )}
 
                         {currentScreen === 3 && (
-                          <div className="flex flex-col items-center mt-8 ">
-                             <div className="w-full flex flex-col items-center md:items-center md:mt-[40px] md:mb-[80px]">
+                          <div className="flex flex-col items-center mt-8">
+                          {/* Progress Bar Section */}
+                          <div className="w-full flex flex-col items-center md:items-center md:mb-[80px]">
                             <div className="flex items-center space-x-2 mb-4">
                               <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">03</span>
                               <span className="md:text-[28px]">/</span>
                               <span className="text-lg md:text-[28px] font-semibold">04</span>
                             </div>
                             <div className="md:w-[550px] w-full bg-gray-300 rounded-full h-4 mb-[20px] md:mb-[5px]">
-                              <div
-                                className="bg-[#0009FF] h-4 rounded-full"
-                                style={{ width: '75%' }} 
-                              ></div>
+                              <div className="bg-[#0009FF] h-4 rounded-full" style={{ width: '75%' }}></div>
                             </div>
                           </div>
-                            <h2 className="text-xl font-extrabold text-center uppercase md:text-[28px] md:leading-[37px] font-matt mb-8">Wann möchten Sie starten?</h2>
-                            <form className="space-y-6 font-matt md:mb-[20px] ">
-                              <div className="grid grid-rows-1 md:grid-rows-2 gap-6 mb-8 font-matt">
-                                <label className="flex items-center space-x-3">
-                                  <input
-                                    type="checkbox"
-                                    className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                  />
-                                  <span>Sofort</span>
-                                </label>
-                                <label className="flex items-center space-x-3">
-                                  <input
-                                    type="checkbox"
-                                    className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                  />
-                                  <span>Innerhalb der nächsten 3 Monate</span>
-                                </label>
-                                <label className="flex items-center space-x-3">
-                                  <input
-                                    type="checkbox"
-                                    className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                  />
-                                  <span>In 3–6 Monaten</span>
-                                </label>
-                                <label className="flex items-center space-x-3">
-                                  <input
-                                    type="checkbox"
-                                    className="w-5 h-5 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
-                                  />
-                                  <span>Noch unklar</span>
-                                </label>
-                              </div>
-                            </form>
+                        
+                          {/* Content Section: Form on the left, Video on the right */}
+                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12 w-full max-w-[1280px] mx-auto">
+                            {/* Text and Form Section */}
+                            <div className="lg:w-1/2 lg:px-10">
+                              <h2 className="text-xl font-extrabold text-center lg:text-left uppercase md:text-[28px] md:leading-[37px] font-matt mb-8">
+                                Wann möchten Sie starten?
+                              </h2>
+                              <form className="space-y-6 font-matt md:mb-[20px]">
+                                <div className="grid grid-rows-1 md:grid-rows-2 gap-6 mb-8 font-matt">
+                                  <label className="flex items-center space-x-3">
+                                    <input
+                                      type="checkbox"
+                                      className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                    />
+                                    <span>Sofort</span>
+                                  </label>
+                                  <label className="flex items-center space-x-3">
+                                    <input
+                                      type="checkbox"
+                                      className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                    />
+                                    <span>Innerhalb der nächsten 3 Monate</span>
+                                  </label>
+                                  <label className="flex items-center space-x-3">
+                                    <input
+                                      type="checkbox"
+                                      className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                    />
+                                    <span>In 3–6 Monaten</span>
+                                  </label>
+                                  <label className="flex items-center space-x-3">
+                                    <input
+                                      type="checkbox"
+                                      className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
+                                    />
+                                    <span>Noch unklar</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                        
+                            {/* Video Section */}
+                            <div className="lg:w-1/2 flex justify-center">
+                              <video
+                                className="w-full lg:w-[600px]"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                              >
+                                <source src="/images/Now.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
                           </div>
+                        </div>
+                        
                         )}
              
                         {currentScreen === 4 && (
                           <div className="flex flex-col items-center mt-8 font-matt">
                             {/* Progress Bar */}
-                            <div className="w-full flex flex-col items-center md:mt-[40px] md:mb-[50px]">
+                            <div className="w-full flex flex-col items-center md:mb-[10px]">
                               <div className="flex items-center space-x-2 mb-4">
                                 <span className="text-lg md:text-[28px] font-semibold text-[#0009FF]">04</span>
                                 <span className="md:text-[28px]">/</span>
@@ -292,69 +343,82 @@ const SVGAnimation = () => {
                             </div>
 
                             {/* Main Content */}
-                            <h2 className="text-xl font-extrabold text-center uppercase md:text-[28px] md:leading-[37px] font-matt mb-8">
-                              Wie können wir Sie erreichen?
-                            </h2>
-
-                            <form className="lg:space-y-6 space-y-2 w-full max-w-4xl">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-6 gap-2 mb-4">
-                            <div className="flex flex-col border border-blue-400 w-full">
-                              <label className="hidden">Name</label>
-                              <input
-                                type="text"
-                                placeholder="NAME"
-                                className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500" 
-                              />
-                            </div>
-                            
-                            <div className="flex flex-col border border-blue-400 w-full">
-                                <label className="hidden">Unternehmen</label>
-                                <input
-                                  type="text"
-                                  placeholder="UNTERNEHMEN"
-                                  className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                />
-                              </div>
-                            </div>
-
-                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-6 gap-2 mb-8">
-                                <div className="flex flex-col border border-blue-400 w-full">
-                                    <label className="hidden">E-Mail</label>
-                                    <input
-                                      type="email"
-                                      placeholder="E-MAIL"
-                                      className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                    />
-                                  </div>
-                                  <div className="flex flex-col border border-blue-400 w-full">
-                                    <label className="hidden">Telefonnummer (optional)</label>
-                                    <input
-                                      type="tel"
-                                      placeholder="TELEFONNUMMER (optional)"
-                                      className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                                    />
+                            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mt-8 mx-auto">
+                                {/* Form Section */}
+                                <div className="lg:w-1/2 lg:px-4">
+                                  <h2 className="text-xl font-extrabold text-center lg:text-left uppercase md:text-[28px] md:leading-[37px] font-matt mb-4">
+                                    Wie können wir Sie erreichen?
+                                  </h2>
+                                  <form className="lg:space-y-6 space-y-2 w-full max-w-4xl">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-6 gap-2 mb-4">
+                                      <div className="flex flex-col border border-blue-400 w-full">
+                                        <label className="hidden">Name</label>
+                                        <input
+                                          type="text"
+                                          placeholder="NAME"
+                                          className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                        />
+                                      </div>
+                                      <div className="flex flex-col border border-blue-400 w-full">
+                                        <label className="hidden">Unternehmen</label>
+                                        <input
+                                          type="text"
+                                          placeholder="UNTERNEHMEN"
+                                          className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-6 gap-2 mb-8">
+                                      <div className="flex flex-col border border-blue-400 w-full">
+                                        <label className="hidden">E-Mail</label>
+                                        <input
+                                          type="email"
+                                          placeholder="E-MAIL"
+                                          className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                        />
+                                      </div>
+                                      <div className="flex flex-col border border-blue-400 w-full">
+                                        <label className="hidden">Telefonnummer (optional)</label>
+                                        <input
+                                          type="tel"
+                                          placeholder="TELEFONNUMMER (optional)"
+                                          className="w-full border p-5 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div className="flex flex-col border border-blue-400 w-full">
+                                      <label className="hidden">Nachricht</label>
+                                      <textarea
+                                        placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
+                                        className="w-full border p-4 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
+                                      />
+                                    </div>
+                                    {/* Button */}
+                                    <div className="flex justify-center mt-8">
+                                      <button
+                                        onClick={handleNext}
+                                        className="px-6 py-4 bg-[#0009FF] text-white rounded-[30px] md:text-[28px] md:leading-[37px] font-extrabold hover:bg-blue-800"
+                                      >
+                                        SENDEN
+                                      </button>
+                                    </div>
+                                  </form>
                                 </div>
-                            </div>
 
-                            <div className="flex flex-col border border-blue-400 w-full">
-                              <label className="hidden">Nachricht</label>
-                              <textarea
-                                placeholder="NACHRICHT („Gibt es noch etwas, das wir wissen sollten?“)"
-                                className="w-full border p-4 text-center text-[19px] placeholder-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-500"
-                              />
-                            </div>
-
-                            {/* Button */}
-                            <div className="flex justify-center mt-8">
-                              <button
-                                onClick={handleNext}
-                                className="px-6 py-4 bg-[#0009FF] text-white rounded-[30px] md:text-[28px] md:leading-[37px] font-extrabold hover:bg-blue-800"
-                              >
-                                SENDEN
-                              </button>
-                            </div>
-                          </form>
-
+                                {/* Video Section */}
+                                <div className="lg:w-1/2 flex justify-center">
+                                  <video
+                                    className="w-full lg:w-[600px] lg:h-[480px]"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                  >
+                                    <source src="/images/Part 3.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                                </div>
+                              </div>
                           </div>
                         )}
                         {currentScreen < 4 && (
