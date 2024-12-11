@@ -223,7 +223,7 @@ const ServicesSection = () => {
                         />
         
         </div>
-        <div className="md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14">
+        <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14">
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
             Website
           </h2>
@@ -243,13 +243,13 @@ const ServicesSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/services/website">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-[#0009FF]">
                             MEHR <br>
                             </br>ERFAHREN
                         </motion.button>
                         </Link>
                         <Link href="/contact">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-[#0009FF] group-hover:text-white group-hover:border-[#0009FF]">
                             JETZT PROJEKT <br>
                             </br>STARTEN
                         </motion.button>
@@ -353,7 +353,7 @@ const ServicesSection = () => {
     >
       {/* Left Section: Text */}
       <motion.div
-        className="md:w-1/2 flex flex-col items-center md:space-y-6 md:items-start text-center md:text-left transition-colors duration-500 group-hover:text-white lg:ml-4 lg:group-hover:ml-8 space-y-4"
+        className="group md:w-1/2 flex flex-col items-center md:space-y-6 md:items-start text-center md:text-left transition-colors duration-500 group-hover:text-white lg:ml-4 lg:group-hover:ml-8 space-y-4"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
