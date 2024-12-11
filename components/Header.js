@@ -109,15 +109,14 @@ const Header = () => {
         </nav>
 
         {/* Call to Action */}
-        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hide-on-mobile">
+        <a href="https://calendly.com/fisnik-salihu-the-eksperts/30min" class="inline-block hidden sm:inline-block hover-link">
   <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" fill="none" class="cursor-pointer">
-    <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3"/>
-    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold">
+    <path d="M1.5 34V14.2353L15.4504 2H216.5V34H1.5Z" stroke="#0009FF" stroke-width="3" class="svg-path"/>
+    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#0009FF" font-size="16" font-weight="bold" class="svg-text">
       Jetzt Gespräch buchen
     </text>
   </svg>
 </a>
-
 
 
         {/* Mobile Menu Toggle */}
