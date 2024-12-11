@@ -151,7 +151,6 @@ const SVGAnimation = () => {
                           className="w-full lg:w-[800px]"
                           autoPlay
                           muted
-                          loop
                           playsInline
                         >
                           <source src="/images/Part 1.mp4" type="video/mp4" />
@@ -234,8 +233,6 @@ const SVGAnimation = () => {
                                         <span className="lg:text-[20px] ">Individuelle Softwareentwicklung</span>
                                       </label>
                                     </div>
-
-                                    <div className="space-y-4">
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
@@ -256,12 +253,10 @@ const SVGAnimation = () => {
                                           className="w-full lg:w-[450px] h-10 text-black border-2 border-gray-300 focus:ring-[#0009FF] rounded-lg px-3"
                                           placeholder="Sonstiges (Freitextfeld)"
                                         />
-                                      </label>
-                                    </div>
+                                      </label>  
                                   </form>
                                 </div>
                               </div>
-
                       </div>
                     )}
 
