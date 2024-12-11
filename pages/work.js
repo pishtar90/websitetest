@@ -12,6 +12,7 @@ import figure2 from '/images/the-eksperts-book-hover.png';
 // Array of services for clean code
 const services = [
   {
+    hey
     title: "Salesforce",
     description: "Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
     detail: "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen.",
