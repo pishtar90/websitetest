@@ -123,7 +123,7 @@ const Home = () => {
 
                 {/* Right Text */}
                 <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase lg:px-[30px]">
-                <p>Länder vertreten und weiter wachsend</p>
+                <p>Ländern vertreten und weiter wachsend</p>
                 </div>
             </div>
 
