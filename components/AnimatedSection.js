@@ -94,11 +94,24 @@ const SVGAnimation = () => {
         </div>
       </>
     ) : (
-      <div className="relative z-20 flex flex-col items-center justify-center text-center text-3xl md:text-5xl lg:text-[120px] leading-snug md:leading-[70px] lg:leading-[120px] font-bold space-y-4 p-6 lg:p-12">
-        <p>Vielen Dank!</p>
-        <p>Wir melden uns so schnell</p>
-        <p>wie möglich.</p>
-      </div>
+      <div className="relative z-20 flex flex-col items-center justify-center text-center text-3xl md:text-5xl lg:text-[90px] leading-snug md:leading-[70px] lg:leading-[90px] font-[700] font-matt space-y-4 p-6 lg:p-12">
+          <div className="flex items-center justify-center space-x-0">
+            <p>Vielen Dank!</p>
+            <video
+              className="w-[50px] h-[50px] lg:w-auto lg:h-[110px]"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/images/Like.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p>Wir melden uns so schnell</p>
+          <p>wie möglich.</p>
+        </div>
+
     )}
       {/* Funnel Modal */}
       {isModalOpen && (
@@ -280,28 +293,28 @@ const SVGAnimation = () => {
                                       type="checkbox"
                                       className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span>Sofort</span>
+                                    <span className="lg:text-[20px]">Sofort</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span>Innerhalb der nächsten 3 Monate</span>
+                                    <span className="lg:text-[20px]">Innerhalb der nächsten 3 Monate</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span>In 3–6 Monaten</span>
+                                    <span className="lg:text-[20px]">In 3–6 Monaten</span>
                                   </label>
                                   <label className="flex items-center space-x-3">
                                     <input
                                       type="checkbox"
                                       className="w-6 h-6 text-[#0009FF] border-gray-300 rounded focus:ring-[#0009FF]"
                                     />
-                                    <span>Noch unklar</span>
+                                    <span className="lg:text-[20px]">Noch unklar</span>
                                   </label>
                                 </div>
                               </form>
