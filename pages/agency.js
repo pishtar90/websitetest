@@ -230,33 +230,33 @@ const Agency = () => {
               </section>
 
               <section id="wie" className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:max-w-[1280px] mx-auto lg:mt-[200px]">
-                    <div className="font-matt flex-1 max-w-md lg:text-left text-center ">
+                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700 ">
-                        Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen.                        </p>
+                        Unser Ansatz basiert auf vier zentralen Säulen, die eine nahtlose Zusammenarbeit und nachhaltige Ergebnisse gewährleisten. Vom Verstehen eurer individuellen Anforderungen, über die visuelle und technische Umsetzung bis hin zu einer langfristigen Partnerschaft begleiten wir euch Schritt für Schritt. Gemeinsam, in enger Kooperation, entwickeln wir die beste Lösung, die nicht nur eure aktuellen Bedürfnisse erfüllt, sondern auch zukunftsfähig bleibt. Jede Phase ist dabei auf Zusammenarbeit und Qualität ausgerichtet, um euch einen nachhaltigen Mehrwert zu bieten.</p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
                         <img
-                        src="/images/Full 1.png" 
+                        src="/images/theeksperts-pillar.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[800px] lg:h-[600px] lg:ml-12"
+                        className="w-full lg:w-full lg:h-auto lg:ml-2"
                         />
                     </div>
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-10  lg:max-w-[1280px] mx-auto">
-                    <div className="flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="flex-1 mt-8 md:mt-0 flex justify-center lg:mr-[10px]">
                         <img
-                        src="/images/1 2.png" 
+                        src="/images/theeksperts-blue.png" 
                         alt="Info Section Image"
                         className="w-full lg:w-[800px] lg:h-[600px] lg:mr-10"
                         />
                     </div>
 
-                    <div className="font-matt flex-1 max-w-md lg:text-left text-center">
+                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Verstehen und Kommunikation – Die Basis für euren Erfolg
                         </h2>
@@ -267,7 +267,7 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-2 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 max-w-md lg:text-left text-center">
+                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         UI/UX – Benutzerzentrierte Gestaltung für eure Lösung
                         </h2>
@@ -276,9 +276,9 @@ const Agency = () => {
                         </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
                         <img
-                        src="/images/2 1.png" 
+                        src="/images/theeksperts-yellow.png" 
                         alt="Info Section Image"
                         className="w-full lg:w-[800px] lg:h-[600px] lg:ml-14"
                         />
@@ -286,15 +286,15 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-2 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:mr-[10px]">
                         <img
-                        src="/images/4 1.png" 
+                        src="/images/theeksperts-green.png" 
                         alt="Info Section Image"
                         className="w-full lg:w-[800px] lg:h-[600px] lg:mr-12"
                         />
                     </div>
                     
-                    <div className="font-matt flex-1 max-w-md lg:text-left text-center">
+                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Technische Implementierung – Von der Idee zur Realität </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
@@ -304,7 +304,7 @@ const Agency = () => {
                     </section>
 
                     <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-10 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 max-w-md text-left">
+                    <div className="font-matt flex-1 lg:min-w-[500px] text-left">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Optimierung, Schulung und Support – Nachhaltige Partnerschaft
                         </h2>
@@ -313,9 +313,9 @@ const Agency = () => {
                         </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
                         <img
-                        src="/images/3 1.png" 
+                        src="/images/theeksperts-red.png" 
                         alt="Info Section Image"
                         className="w-full lg:w-[800px] lg:h-[600px] lg:ml-14"
                         />
@@ -481,20 +481,17 @@ const Agency = () => {
                         </div>
 
                         {/* Paragraphs in one line */}
-                        <div className="flex justify-between w-full gap-12 lg:max-w-[1280px] lg:px-2">
-                          <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center">
-                            Mit der Gründung der eksperts Academy unterstützen
-                            wir die nächste Generation von Fachkraeften durch
-                            Zugang zu Wissen und Ressourcen.                          </p>
-                          <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center">
-                            Wir helfen kleineren Unternehmen nicht nur mit finanziellen Mitteln, sondern auch durch unsere personellen Ressourcen und die Infrastruktur unserer Firma, um ihre Ideen und Projekte zu realisieren.
-                          </p>
-                          <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center">
-                            Erfolg bedeutet für uns, etwas zurückzugeben und
-                            gemeinsam Innovation und Wachstum in unserer
-                            Region zu fördern.
-                          </p>
-                        </div>
+                        <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:min-w-[1280px] lg:px-2 gap-12">
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                          Mit der Gründung der eksperts Academy unterstützen wir die nächste Generation von Fachkräften durch Zugang zu Wissen und Ressourcen.
+                        </p>
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                          Wir helfen kleineren Unternehmen nicht nur mit finanziellen Mitteln, sondern auch durch unsere personellen Ressourcen und die Infrastruktur unserer Firma, um ihre Ideen und Projekte zu realisieren.
+                        </p>
+                        <p className="text-[20px] leading-[33px] text-black mb-4 font-matt text-center lg:w-1/3">
+                          Erfolg bedeutet für uns, etwas zurückzugeben und gemeinsam Innovation und Wachstum in unserer Region zu fördern.
+                        </p>
+                      </div>
                       </div>
 
                 <div className="w-full flex justify-center items-center mt-12 bg-white px-8 md:p-4 rounded-[20px] lg:mt-[50px]">
