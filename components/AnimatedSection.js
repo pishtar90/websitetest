@@ -210,7 +210,6 @@ const SVGAnimation = () => {
                                 {/* Form Section */}
                                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                                   <form className="grid grid-cols-1 gap-6 mb-8 md:mb-[10px]">
-                                    <div className="space-y-4">
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
@@ -232,7 +231,6 @@ const SVGAnimation = () => {
                                         />
                                         <span className="lg:text-[20px] ">Individuelle Softwareentwicklung</span>
                                       </label>
-                                    </div>
                                       <label className="flex items-center space-x-3">
                                         <input
                                           type="checkbox"
