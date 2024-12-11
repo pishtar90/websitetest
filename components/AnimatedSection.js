@@ -15,6 +15,12 @@ const SVGAnimation = () => {
     }
   };
 
+  const handleBack = () => {
+    if (currentScreen > 1) {
+      setCurrentScreen((prev) => prev - 1);
+    }
+  };
+
   // Intersection Observer to trigger animation when section comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -76,7 +82,7 @@ const SVGAnimation = () => {
       {!showThankYou ? (
       <>
         {/* Title Section */}
-        <div className="relative z-20 flex flex-col items-center lg:items-start text-black text-5xl md:text-5xl lg:text-[190px] leading-snug md:leading-[70px] lg:leading-[150px] font-bold space-y-2 lg:space-y-4 mb-8 lg:mb-12">
+        <div className="relative z-20 flex flex-col items-center lg:items-start text-black text-6xl lg:text-[190px] leading-snug md:leading-[80px] lg:leading-[150px] font-bold space-y-2 lg:space-y-4 mb-8 lg:mb-12">
           <span className="font-matt">Nicht auf</span>
           <span className="font-matt">diesen</span>
           <span className="font-matt">Button</span>
@@ -84,10 +90,10 @@ const SVGAnimation = () => {
         </div>
   
         {/* Button Section */}
-        <div className="relative z-20 mt-4 md:absolute md:top-1/2 md:right-[0.5%] md:transform md:-translate-y-1/2">
+        <div className="relative z-20 mt-4 lg:absolute lg:top-1/2 lg:right-[0.5%] md:transform md:-translate-y-1/2">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="font-matt md:w-[300px] md:h-[100px] px-8 sm:px-10 py-8 sm:py-5 text-2xl md:text-[70px] font-bold text-white bg-black rounded-full shadow-lg hover:bg-gray-800 transition duration-300"
+            className="gradient-hover font-matt lg:w-[300px] lg:h-[100px] px-8 sm:px-10 py-8 sm:py-5 text-2xl lg:text-[70px] font-bold text-white bg-black rounded-full shadow-lg hover:bg-gray-800 transition duration-300"
           >
            Button
           </button>
@@ -429,7 +435,7 @@ const SVGAnimation = () => {
                         )}
                         {currentScreen < 4 && (
                           <div className="flex justify-center mt-4">
-                          <button
+                           <button
                             onClick={handleNext}
                             className="px-4 py-4 bg-[#0009FF] text-white rounded-[30px] md:text-[28px] md:leading-[37px] font-extrabold hover:bg-blue-800"
                           >

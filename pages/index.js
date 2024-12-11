@@ -49,7 +49,9 @@ const Home = () => {
         </div>
 
             <Work/>
+
             <Wie/>
+
             <Warum/>
 
             <Testimonials/>
@@ -86,9 +88,9 @@ const Home = () => {
                 </div>
 
                 {/* 3 Länder Section */}
-                <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-8  lg:space-x-28 px-4 lg:px-0">
+                <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-4  lg:space-x-28 px-2 lg:px-0">
                 {/* Left Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase ">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase">
                 <p>Bereits in</p>
                 </div>
 
@@ -120,7 +122,7 @@ const Home = () => {
                 </div>
 
                 {/* Right Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase lg:px-[40px]">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase lg:px-[30px]">
                 <p>Länder vertreten und weiter wachsend</p>
                 </div>
             </div>
