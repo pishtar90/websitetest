@@ -1,116 +1,115 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import secondImage from '/images/costum-normal-2.png';
-import secondImage2 from '/images/costum-hover.png';
-import firstImage from '/images/website-normal.png';
-import firstImage2 from '/images/website-hover.png';
-import GraphicDesignSection from '../components/GraphisDesignSection';
-import figure from '/images/the-eksperts-book.png';
-import figure2 from '/images/the-eksperts-book-hover.png';
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import Testimonials from '../components/Testimonials';
+import LogoSection from '../components/LogoSection'; 
+import Hero from '../components/Hero';
+import '../styles/global.css'; 
+import AnimatedSection from '../components/AnimatedSection';
+import '../styles/swiper.css';
+import Work from '../pages/work';
+import Wie from '../components/wie';
+import Warum from '../components/warum';
+import { motion } from 'framer-motion';
 
-// Animation Variants
 const fadeVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.9, ease: "easeInOut" },
-    },
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.8 } },
 };
 
-const ServicesSection = () => {
+const Home = () => {
   const [hovered, setHovered] = useState(false);
-
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
-  });
+  const [isHeroVisible, setHeroVisible] = useState(true);
 
   useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [inView, controls]);
+    const handleScroll = () => {
+      const heroElement = document.getElementById('hero');
+      if (!heroElement) return;
+      const heroHeight = heroElement.offsetHeight;
+      const scrollY = window.scrollY;
+      setHeroVisible(scrollY < heroHeight - 80);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <section className="relative overflow-hidden">
-      {/* Hero Section */}
-      <div className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-500 to-blue-700 text-white text-center">
-        <h1 className="text-5xl lg:text-7xl font-bold mb-4">Welcome to Our Services</h1>
-        <p className="text-lg lg:text-2xl max-w-3xl">
-          Discover our range of solutions to elevate your business with modern, flexible, and scalable services.
-        </p>
-        <Link href="/contact">
-          <motion.button
-            className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+    <>
+      <Head>
+        <title>The Eksperts</title>
+      </Head>
+
+      <main className="font-matt flex flex-col items-center bg-white px-4">
+        {/* Hero Section */}
+        <div className="font-matt w-full max-w-[1280px] mx-auto text-center my-2">
+          <Hero setHeroVisible={setHeroVisible} />
+        </div>
+
+        {/* Work, Wie, Warum */}
+        <Work />
+        <Wie />
+        <Warum />
+
+        {/* Sticky Scroll Service Sections */}
+        <div className="relative h-[400vh]">
+          {/* Salesforce Section */}
+          <motion.section
+            className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gray-100 z-40"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeVariants}
           >
-            Get Started
-          </motion.button>
-        </Link>
-      </div>
-
-      <div className="relative h-screen">
-        {/* Salesforce Section */}
-        <motion.section
-          ref={ref}
-          className="absolute top-0 w-full h-screen flex items-center justify-center z-40 bg-[#FAFAFA]"
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <div className="text-center">
             <h2 className="text-6xl font-bold">Salesforce</h2>
-            <p className="mt-4 text-lg">Ihr Partner für nachhaltige Salesforce-Lösungen.</p>
-          </div>
-        </motion.section>
+            <p className="text-lg mt-4">Ihr Partner für nachhaltige Salesforce-Lösungen.</p>
+          </motion.section>
 
-        {/* Website Section */}
-        <motion.section
-          className="absolute top-0 w-full h-screen flex items-center justify-center z-30 bg-white"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <div className="text-center">
+          {/* Website Section */}
+          <motion.section
+            className="sticky top-0 h-screen flex flex-col items-center justify-center bg-white z-30"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeVariants}
+          >
             <h2 className="text-6xl font-bold">Website</h2>
-            <p className="mt-4 text-lg">Ihre digitale Visitenkarte – modern, effizient und einzigartig.</p>
-          </div>
-        </motion.section>
+            <p className="text-lg mt-4">Ihre digitale Visitenkarte – modern, effizient und einzigartig.</p>
+          </motion.section>
 
-        {/* Custom Development Section */}
-        <motion.section
-          className="absolute top-0 w-full h-screen flex items-center justify-center z-20 bg-[#FAFAFA]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <div className="text-center">
+          {/* Custom Development Section */}
+          <motion.section
+            className="sticky top-0 h-screen flex flex-col items-center justify-center bg-gray-200 z-20"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeVariants}
+          >
             <h2 className="text-6xl font-bold">Custom Development</h2>
-            <p className="mt-4 text-lg">Individuelle Softwarelösungen für Ihre Anforderungen.</p>
-          </div>
-        </motion.section>
+            <p className="text-lg mt-4">Individuelle Softwarelösungen für Ihre Anforderungen.</p>
+          </motion.section>
 
-        {/* Book Your Ekspert Section */}
-        <motion.section
-          className="absolute top-0 w-full h-screen flex items-center justify-center z-10 bg-blue-600 text-white"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <div className="text-center">
+          {/* Book Your Ekspert Section */}
+          <motion.section
+            className="sticky top-0 h-screen flex flex-col items-center justify-center bg-blue-600 text-white z-10"
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeVariants}
+          >
             <h2 className="text-6xl font-bold">Book Your Ekspert</h2>
-            <p className="mt-4 text-lg">Flexibel und auf Abruf – Ihre Experten direkt verfügbar.</p>
-          </div>
-        </motion.section>
-      </div>
-    </section>
+            <p className="text-lg mt-4">Flexibel und auf Abruf – Ihre Experten direkt verfügbar.</p>
+          </motion.section>
+        </div>
+
+        {/* Additional Components */}
+        <Testimonials />
+        <AnimatedSection />
+        <LogoSection />
+
+        <section className="bg-white py-16 lg:py-2 lg:max-w-[1280px] mx-auto flex flex-col font-matt space-y-16 lg:space-y-0">
+          {/* Content */}
+        </section>
+      </main>
+    </>
   );
 };
 
-export default ServicesSection;
+export default Home;
