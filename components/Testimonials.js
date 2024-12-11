@@ -72,7 +72,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-<div className="py-12 px-4 lg:px-0 lg:mb-[300px] lg:mt-[300px] max-w-[1280px] w-full mx-auto">
+<div className="py-12 px-4 lg:px-0 lg:mb-[50px] lg:mt-[300px] max-w-[1280px] w-full mx-auto">
 <div className="max-w-7xl mx-auto text-center">
       <h2 className="font-matt text-center text-3xl lg:text-[80px] lg:leading-[80px] font-bold mb-12">Kein Eigenlob – sondern ehrliches Feedback</h2>
 

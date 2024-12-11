@@ -39,7 +39,7 @@ const SVGAnimation = () => {
   return (
     <section
       ref={svgRef} // Reference for IntersectionObserver
-      className="relative font-matt flex flex-col items-center lg:items-start justify-center py-12 px-6 bg-white lg:min-w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mt-[300px] lg:mb-[100px]"
+      className="relative font-matt flex flex-col items-center lg:items-start justify-center py-12 px-6 bg-white lg:min-w-[1280px] mx-auto max-h-[990px] md:py-2 md:px-8 lg:mb-[100px]"
     >
       {/* SVG Animation - Conditionally Rendered */}
       {!showThankYou && (
