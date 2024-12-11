@@ -10,21 +10,24 @@ const LogoSection = () => {
     { default: "/images/phc-logo.png", hover: "/images/phc-logo-hover.png" },
     { default: "/images/netto-logo.png", hover: "/images/netto-logo-hover.png" },
     { default: "/images/mobilezone-official-logo.png", hover: "/images/mobilezone-logo-hover.png" },
-    { default: "/images/pluxe-logo.png", hover: "/images/pluxe-logo-hover.png" },
+    { default: "/images/salesforce-logo.png", hover: "/images/salesforce-logo-hover.png" },
     { default: "/images/novalex-logo.png", hover: "/images/novalex-logo-hover.png" },
     { default: "/images/eco-logo.png", hover: "/images/eco-logo-hover.png" },
     { default: "/images/mobilezone-logo.png", hover: "/images/smzh-logo-hover.png" },
-    { default: "/images/greenfinity-logo.png", hover: "/images/greenfinity-logo-hover.png" },
     { default: "/images/awh-logo.png", hover: "/images/awh-logo-hover.png" },
     { default: "/images/rexhepi-logo.png", hover: "/images/rexhepi-logo-hover.png" },
     { default: "/images/max-logo.png", hover: "/images/max-logo-hover.png" },
     { default: "/images/divid-logo.png", hover: "/images/divid-logo-hover.png" },
     { default: "/images/mint-logo.png", hover: "/images/mint-logo-hover.png" },
     { default: "/images/def-logo.png", hover: "/images/def-logo-hover.png" },
+    { default: "/images/m-logo.png", hover: "/images/m-logo-hover.png" },
     { default: "/images/mobilezone-voiceline-logo.png", hover: "/images/mobilezone-voiceline-logo-hover.png" },
     { default: "/images/von-logo.png", hover: "/images/von-logo-hover.png" },
     { default: "/images/spitex-logo.png", hover: "/images/spitex-logo-hover.png" },
+    { default: "/images/platen-logo.png", hover: "/images/platen-logo-hover.png" },
+    { default: "/images/baurex-logo.png", hover: "/images/baurex-logo-hover.png" },
     { default: "/images/ballenberg-logo.png", hover: "/images/ballenberg-logo-hover.png" },
+    { default: "/images/x-logo.png", hover: "/images/x-logo-hover.png" },
     { default: "/images/yourplace-hover.png", hover: "/images/yourplace.png" }
   ];
 
@@ -36,7 +39,7 @@ const LogoSection = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 max-w-[1280px] lg:mb-[200px] mt-[100px] lg:mt-[200px] mb-[50px]">
+    <div className="container mx-auto p-4 max-w-[1280px] lg:mb-[300px] mt-[100px] lg:mt-[300px] mb-[50px]">
       <div className="text-left mb-12">
         <h2 className="text-4xl font-extrabold mb-4">Vertrauen durch Zusammenarbeit</h2>
       </div>
