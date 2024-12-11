@@ -199,7 +199,7 @@ const ServicesSection = () => {
         ref={ref}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out gradient-container"
+        className="group font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out gradient-container"
         initial="hidden"
 
         whileInView="visible"
