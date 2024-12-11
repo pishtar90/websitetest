@@ -138,7 +138,7 @@ const WieWirArbeiten = () => {
       <Section
         title="Technische Implementierung – Von der Idee zur Realität"
         text="Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist."
-        image="/images/green 1.png"
+        image="/images/Green 1.png"
         reverse
       />
       <Section
