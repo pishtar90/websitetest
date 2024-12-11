@@ -52,6 +52,8 @@ const Home = () => {
             <Wie/>
             <Warum/>
 
+            <Testimonials/>
+
             <AnimatedSection/>
 
             <LogoSection />
