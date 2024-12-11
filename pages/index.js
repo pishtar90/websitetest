@@ -22,6 +22,7 @@ export default function Home() {
           variants={fadeVariants}
         >
           <h2 className="text-6xl font-bold">Salesforce</h2>
+          <p className="mt-4 text-lg">Ihr Partner für nachhaltige Salesforce-Lösungen.</p>
         </motion.section>
 
         {/* Website Section */}
@@ -32,6 +33,7 @@ export default function Home() {
           variants={fadeVariants}
         >
           <h2 className="text-6xl font-bold">Website</h2>
+          <p className="mt-4 text-lg">Moderne, effiziente und einzigartige Websites.</p>
         </motion.section>
 
         {/* Custom Development Section */}
@@ -42,6 +44,7 @@ export default function Home() {
           variants={fadeVariants}
         >
           <h2 className="text-6xl font-bold">Custom Development</h2>
+          <p className="mt-4 text-lg">Individuelle Softwarelösungen für Ihre Anforderungen.</p>
         </motion.section>
 
         {/* Book Your Ekspert Section */}
@@ -52,6 +55,7 @@ export default function Home() {
           variants={fadeVariants}
         >
           <h2 className="text-6xl font-bold">Book Your Ekspert</h2>
+          <p className="mt-4 text-lg">Flexibel und auf Abruf – Ihre Experten direkt verfügbar.</p>
         </motion.section>
       </div>
     </div>
