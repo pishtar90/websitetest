@@ -82,12 +82,12 @@ const Section = ({ title, text, image, reverse }) => {
       ref={ref}
       className={`font-matt flex flex-col ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center justify-between px-6 md:px-10 py-8 lg:min-w-[1280px] mx-auto`}
+      } items-center justify-between px-4 md:px-2 py-8 lg:min-w-[1280px] mx-auto`}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={fadeVariants}
     >
-      <motion.div className="flex-1 max-w-md text-center md:text-left">
+      <motion.div className="flex-1 max-w-lg text-center md:text-left">
         <motion.h2
           className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase"
           variants={fadeVariants}
@@ -108,7 +108,7 @@ const Section = ({ title, text, image, reverse }) => {
         <img
           src={image}
           alt={title}
-          className="w-full lg:w-[800px] lg:h-[600px] object-cover rounded-md"
+          className="w-full lg:w-[750px] lg:h-[600px] object-cover"
         />
       </motion.div>
     </motion.section>
@@ -121,30 +121,30 @@ const WieWirArbeiten = () => {
       <HeaderSection />
       <Section
         title="Unsere 4 Säulen – Ein ganzheitlicher Ansatz"
-        text="Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen."
-        image="/images/Full 1.png"
+        text="Unser Ansatz baut auf vier zentralen Säulen auf, die nahtlose Zusammenarbeit und nachhaltige Ergebnisse sichern. Von der Analyse eurer Anforderungen über die visuelle und technische Umsetzung bis zur langfristigen Partnerschaft entwickeln wir Lösungen, die eure aktuellen und zukünftigen Bedürfnisse erfüllen. Jede Phase ist auf Zusammenarbeit und Qualität ausgerichtet, um echten Mehrwert zu schaffen."
+        image="/images/all 1.png"
       />
       <Section
         title="Verstehen und Kommunikation – Die Basis für euren Erfolg"
-        text="Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für maßgeschneiderte Lösungen."
-        image="/images/1 2.png"
+        text="Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln."
+        image="/images/blue 1.png"
         reverse
       />
       <Section
         title="UI/UX – Benutzerzentrierte Gestaltung für eure Lösung"
-        text="Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind."
-        image="/images/2 1.png"
+        text="Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden."
+        image="/images/yellow 1.png"
       />
       <Section
         title="Technische Implementierung – Von der Idee zur Realität"
-        text="Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz oder Cloud-Infrastruktur – wir stellen sicher, dass die technische Umsetzung stabil, effizient und zukunftssicher ist."
-        image="/images/4 1.png"
+        text="Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist."
+        image="/images/green 1.png"
         reverse
       />
       <Section
         title="Optimierung, Schulung und Support – Nachhaltige Partnerschaft"
-        text="Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten."
-        image="/images/3 1.png"
+        text="Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft."
+        image="/images/red 1.png"
       />
     </div>
   );
