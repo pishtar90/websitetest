@@ -82,7 +82,7 @@ const Home = () => {
                         </svg>
 
                     </div>
-                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase mb-12 mt-10">
+                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase mb-12 mt-10">
                     Unserer Kunden empfehlen uns weiter
                     </p>
                 </div>
@@ -90,7 +90,7 @@ const Home = () => {
                 {/* 3 Länder Section */}
                 <div className="font-matt flex flex-col lg:flex-row items-center justify-center text-center lg:text-left space-y-4  lg:space-x-28 px-2 lg:px-0">
                 {/* Left Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase">
                 <p>Bereits in</p>
                 </div>
 
@@ -122,7 +122,7 @@ const Home = () => {
                 </div>
 
                 {/* Right Text */}
-                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold uppercase lg:px-[30px]">
+                <div className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] uppercase lg:px-[30px]">
                 <p>Ländern vertreten und weiter wachsend</p>
                 </div>
             </div>
@@ -142,7 +142,7 @@ const Home = () => {
                     <path d="M142.831 191.296L134.706 195.659L126.581 191.296L53.1172 151.852V204.687L134.706 248.495L216.295 204.687V151.852L142.831 191.296Z" fill="#0009FF"/>
                     </svg>
                     </div>
-                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-extrabold mt-4 uppercase">
+                    <p className="font-matt text-lg lg:text-[28px] lg:leading-[37px] font-[900] mt-4 uppercase">
                     Gründung der <br></br>The Eksperts Academy
                     </p>
                 </div>
@@ -177,7 +177,7 @@ const Home = () => {
                         </svg>
                         </div>
                     </div>
-                    <p className="font-matt text-base sm:text-lg lg:text-[28px] lg:leading-[37px] font-extrabold mt-4 uppercase text-center lg:text-left">
+                    <p className="font-matt text-base sm:text-lg lg:text-[28px] lg:leading-[37px] font-[900] mt-4 uppercase text-center lg:text-left">
                         Erfolgreiche Projekte in <br></br>den letzten 12 Monaten
                     </p>
                     </div>
