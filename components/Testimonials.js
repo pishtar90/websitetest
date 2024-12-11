@@ -65,8 +65,8 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="py-12 px-4 lg:px-0 lg:mb-[300px]">
-      <div className="max-w-7xl mx-auto text-center">
+<div className="py-12 px-4 lg:px-0 lg:mb-[300px] max-w-[1280px] w-full mx-auto">
+<div className="max-w-7xl mx-auto text-center">
       <h2 className="font-matt text-center text-3xl lg:text-[80px] lg:leading-[80px] font-bold mb-12">Kein Eigenlob – sondern ehrliches Feedback</h2>
 
       </div>
@@ -106,7 +106,12 @@ export default function Testimonials() {
                     fill="#0009FF"
                   />
                 </svg>
-                <p className="text-gray-700 text-xl font-matt mt-10">{testimonial.quote}</p>
+                <div className="w-full max-w-screen-md mx-auto">
+  <p className="text-gray-700 text-base md:text-lg lg:text-xl font-matt mt-10 leading-relaxed break-words">
+    {testimonial.quote}
+  </p>
+</div>
+
                 <div className="mt-6">
                 <h3 className="font-extrabold text-xl lg:text-[25px] lg:leading-[32px] font-matt text-black uppercase">{testimonial.name}</h3>
                 <p className="text-sm text-black lg:text-[18px] lg:leading-[24px] font-matt">{testimonial.title}</p>
@@ -118,7 +123,7 @@ export default function Testimonials() {
         </Swiper>
 
         {/* Custom Navigation Buttons */}
-        <div className="absolute lg:top-1 transform -translate-y-1/2 lg:left-[-50px] cursor-pointer custom-prev">
+        <div className="absolute top-[0%] -translate-y-1/2 left-4 lg:left-[-50px] cursor-pointer custom-prev z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
   <path d="M0.75277 35.6516L5.6543 30.7501L10.5558 35.6516L5.6543 40.5531L0.75277 35.6516Z" fill="#0009FF" stroke="#0009FF"/>
   <path d="M66.9695 32.3581L66.9694 39.2901L17.2011 39.2901L13.7515 35.8404L16.0229 33.569C16.7966 32.7953 17.8475 32.3619 18.9435 32.3581C18.9437 32.3581 18.9439 32.3581 18.944 32.3581L66.9695 32.3581Z" fill="#0009FF" stroke="#0009FF"/>
@@ -126,7 +131,7 @@ export default function Testimonials() {
   <path d="M20.7409 45.8367L15.8394 50.7382L10.0707 44.9696C8.5622 43.461 8.56219 41.0141 10.0707 39.5055L12.2402 37.336L20.7409 45.8367Z" fill="#0009FF" stroke="#0009FF"/>
 </svg>
         </div>
-        <div className="absolute lg:top-1 transform -translate-y-1/2 lg:right-[-50px] cursor-pointer custom-next">
+        <div className="absolute top-[0%] -translate-y-1/2 right-4 lg:right-[-50px] cursor-pointer custom-next z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
   <path d="M71.2472 35.782L66.3457 40.6835L61.4442 35.782L66.3457 30.8805L71.2472 35.782Z" fill="#0009FF" stroke="#0009FF"/>
   <path d="M5.03055 39.0755L5.03056 32.1435L54.7989 32.1435L58.2486 35.5932L55.9771 37.8646C55.2034 38.6383 54.1525 39.0717 53.0565 39.0755C53.0563 39.0755 53.0561 39.0755 53.056 39.0755L5.03055 39.0755Z" fill="#0009FF" stroke="#0009FF"/>
