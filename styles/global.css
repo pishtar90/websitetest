@@ -134,29 +134,55 @@ body {
   }
 }
 
-
-/* Position the pagination dots */
 .swiper-pagination {
   position: absolute; 
   top: 1px; 
   left: 50%; 
-  transform: translateX(-50%); /* Center alignment */
-  z-index: 10; /* Ensure dots are above the slides */
+  transform: translateX(-50%); 
+  z-index: 10; 
 }
 
-/* Swiper pagination dots */
 .swiper-pagination-bullet {
-  background-color: #0009ff; /* Default color for inactive dots */
-  opacity: 0.5; /* Slightly transparent */
+  background-color: #0009ff; 
+  opacity: 0.5; 
   width: 20px;
   height: 20px;
-  margin: 0 5px; /* Space between dots */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  margin: 0 5px; 
+  transition: background-color 0.3s, transform 0.3s; 
 }
 
-/* Active dot */
 .swiper-pagination-bullet-active {
-  background-color: #0009ff; /* Color for active dot */
-  opacity: 1; /* Fully opaque */
-  transform: scale(1.2); /* Slightly larger active dot */
+  background-color: #0009ff; 
+  opacity: 1; 
+  transform: scale(1.2); 
 }
+
+.gradient-container {
+  background: radial-gradient(105.57% 105.57% at 50% 50%, #FFF 0%, #FAFAFA 100%);
+  transition: background 0.3s ease-in-out;
+}
+
+.gradient-container:hover {
+  background: radial-gradient(105.57% 105.57% at 50% 50%, #FFF 0%, #969AFF 100%);
+}
+
+.hover-gradient-container {
+  background: #FAFAFA; /* Default background */
+  transition: background 0.3s ease-in-out;
+}
+
+.hover-gradient-container:hover {
+  background: conic-gradient(from 187deg at 16.05% 158.56%, #CFFF49 0deg, #E24125 180deg, #0009FF 360deg);
+}
+
+.hover-radial-gradient-container {
+  background: #FAFAFA; /* Default background color */
+  transition: background 0.3s ease-in-out;
+}
+
+.hover-radial-gradient-container:hover {
+  background: radial-gradient(105.57% 105.57% at 50% 50%, #D83200 0%, #0009FF 50%);
+}
+
+
+

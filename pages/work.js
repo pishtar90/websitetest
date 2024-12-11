@@ -127,29 +127,30 @@ const ServicesSection = () => {
         variants={fadeVariants}
       >
         <div className="font-matt md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10 lg:ml-8 lg:mr-12 lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:ml-12">
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Salesforce
           </h2>
-          <p className="text-[#5A585A] mb-6 font-matt font-bold text-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[700] text-[20px] leading-[33px]">
             Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.
           </p>
-          <p className="text-[#5A585A] mb-6 font-matt font-[20px]  leading-[33px]">
-            Als offizieller Salesforce-Partner helfen wir Ihnen, das volle <br></br>Potenzial von Salesforce zu nutzen. <br></br>
-            Ob Neuimplementierung, Optimierung oder
-            massgeschneiderte Integrationen– wir stehen Ihnen zur Seite.
+          <p className="text-black mb-6 font-matt text-[18px] font-[300] leading-[33px]">
+           
+                    Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. <br></br>
+                    Ob Neuimplementierung, Optimierung oder
+                    massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.
           </p>
-          <p className="text-[#5A585A] mb-6 font-matt font-bold text-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[700] text-[20px] leading-[33px]">
           Kontaktieren Sie uns und starten Sie Ihre Salesforce-Reise!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/services/salesforce">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:text-[#0009FF] group-hover:bg-white">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-black group-hover:border-black">
                         MEHR <br>
                             </br>ERFAHREN
                         </motion.button>
                         </Link>
                         <Link href="/contact">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:text-white group-hover:bg-[#0009FF]">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-[#0009FF]">
                             JETZT PROJEKT <br>
                             </br>STARTEN
                         </motion.button>
@@ -198,7 +199,7 @@ const ServicesSection = () => {
         ref={ref}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out hover:bg-[radial-gradient(circle,_#ffffff,_#d1e3ff,_#b0c7ff)]"
+        className="font-matt relative flex flex-col md:flex-row text-center lg:text-left items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] transition-all duration-300 ease-in-out gradient-container"
         initial="hidden"
 
         whileInView="visible"
@@ -224,32 +225,32 @@ const ServicesSection = () => {
         
         </div>
         <div className="group md:w-1/2 transition-all duration-500 ease-out lg:hover:mr-16 lg:mr-14">
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
             Website
           </h2>
-          <p className="text-[#5A585A] mb-4 font-bold font-matt text-[20px] leading-[33px]">
+          <p className="text-black mb-4 font-matt text-[20px] font-[700] leading-[33px]">
             Ihre digitale Visitenkarte – modern, effizient und einzigartig.
           </p>
-          <p className="text-[#5A585A] mb-6 font-matt font-[20px] leading-[33px]">
+          <p className="text-black mb-6 font-matt font-[300] text-[20px] leading-[33px]">
             Wir gestalten Websites, die gut aussehen und performen – 
             ob Unternehmensseite, E-Commerce oder Portfolio. <br></br>
-            <span className="font-bold">Individuelles Design:</span> Massgeschneidert für Ihre Marke. <br></br>
-            <span className="font-bold">Benutzerfreundlich:</span> Intuitive Navigation und responsives Design.<br></br>
-            <span className="font-bold">SEO & Performance:</span> Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.
+            <span className="font-[700]">Individuelles Design:</span> Massgeschneidert für Ihre Marke. <br></br>
+            <span className="font-[700]">Benutzerfreundlich:</span> Intuitive Navigation und responsives Design.<br></br>
+            <span className="font-[700]">SEO & Performance:</span> Optimiert für Suchmaschinen, mit schnellen Ladezeiten und sicherer Technologie.
             </p>
 
-          <p className="text-[#5A585A] mb-4 font-bold text-[20px] font-matt leading-[33px]">
+          <p className="text-black mb-4 text-[20px] font-[700] font-matt leading-[33px]">
             Starten Sie jetzt Ihre digitale Transformation!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/services/website">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-[#0009FF]">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:text-white group-hover:bg-black group-hover:border-black">
                             MEHR <br>
                             </br>ERFAHREN
                         </motion.button>
                         </Link>
                         <Link href="/contact">
-                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-[#0009FF] group-hover:text-white group-hover:border-[#0009FF]">
+                        <motion.button className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white">
                             JETZT PROJEKT <br>
                             </br>STARTEN
                         </motion.button>
@@ -263,7 +264,7 @@ const ServicesSection = () => {
     <motion.section
             ref={ref}
 
-      className="font-matt relative flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] text-black overflow-hidden transition-all duration-500 group hover:bg-[conic-gradient(from_187deg_at_16.05%_158.56%,_#CFFF49_0%,_#E24125_180deg,_#0009FF_360deg)] hover:text-white"
+      className="font-matt relative flex flex-col md:flex-row items-center justify-between p-2 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] bg-[#FAFAFA] text-black overflow-hidden transition-all duration-500 group conic-gradient-container hover-gradient-container  hover:text-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -276,22 +277,22 @@ const ServicesSection = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] lg:mb-6 ">
         Custom Development
         </h2>
-        <p className="font-matt text-[#5A585A] mb-6 font-bold text-[20px] leading-[33px] lg:mb-6 transition-colors duration-300 group-hover:text-white">
+        <p className="font-matt text-black mb-4  text-[20px] leading-[33px] font-[700] lg:mb-4 transition-colors duration-300 group-hover:text-white">
           Individuelle Softwarelösungen für einzigartige Anforderungen.
         </p>
-        <p className="text-[#5A585A] mb-6 font-matt font-[20px] leading-[28px] group-hover:text-white">
+        <p className="text-black mb-4 font-matt text-[20px] font-[300] leading-[28px] group-hover:text-white">
         Keine Herausforderung ist zu gross. Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse zugeschnitten sind– von speziellen Modulen bis hin zu komplexen Systemen. Unsere Lösungen integrieren sich nahtlos in bestehende Systeme und nutzen modernste Technologien, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.
         </p>
-        <p className="text-[#5A585A] mb-4 font-matt font-bold text-[20px] leading-[33px] group-hover:text-white">
+        <p className="text-black mb-4 font-matt font-[700] text-[20px] leading-[33px] group-hover:text-white">
         Entwickeln Sie Ihre massgeschneiderte Lösung– starten Sie jetzt!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
           <Link href="/services/costumdevelopment">
             <motion.button
-              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white"
+              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-black group-hover:text-white group-hover:border-black"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -301,7 +302,7 @@ const ServicesSection = () => {
           </Link>
           <Link href="/contact">
             <motion.button
-              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-200 group-hover:bg-[#0009FF] group-hover:text-white group-hover:border-[#0009FF]"
+              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-200 group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -361,13 +362,13 @@ const ServicesSection = () => {
         <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] ">
           Book your Ekspert
         </h2>
-        <p className="text-[#5A585A] text-base font-bold sm:text-lg leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
+        <p className="text-black text-base font-[700] sm:text-lg font-matt leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
           Ihre Expertise – flexibel und auf Abruf.
         </p>
-        <p className="text-[#5A585A] text-base sm:text-lg leading-relaxed sm:leading-[30px] md:leading-tight transition-colors duration-500 group-hover:text-white">
+        <p className="text-black text-base sm:text-lg font-[300] font-matt leading-relaxed sm:leading-[30px] md:leading-tight transition-colors duration-500 group-hover:text-white">
         Mit unserem „Book Your Ekspert"-Service bringen erfahrene Fachkräfte Ihre Projekte individuell und flexibel voran. Ob IT, Design, Entwicklung oder Beratung - buchen Sie unsere Eksperten genau dann, wenn Sie sie brauchen. Unsere Spezialistenintegrieren sich nahtlos in Ihr Team und Ihre Prozesse.
         </p>
-        <p className="text-[#5A585A] text-base font-bold sm:text-lg leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
+        <p className="text-black text-base font-[700] sm:text-lg font-matt leading-relaxed sm:leading-[30px] md:leading-[33px] transition-colors duration-500 group-hover:text-white">
           Warum warten, wenn Sie Unterstützung brauchen?
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
@@ -375,13 +376,13 @@ const ServicesSection = () => {
 
           <Link href="/services/bookyourekspert">
             <motion.button
-            className="border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-300">
+            className="border-2 border-[#0009FF] text-white bg-[#0009FF] group-hover:bg-black group-hover:text-white group-hover:border-black px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300">
                                         MEHR <br />
                                         ERFAHREN
                                         </motion.button>
                                     </Link>
                                     <Link href="/services/contact">
-                                        <motion.button className="border-2 border-[#0009FF] text-[#0009FF] bg-white group-hover:bg-[#0009FF] group-hover:text-white group-hover:border-white px-4 py-2 rounded-[20px] font-extrabold transition-colors duration-300">
+                                        <motion.button className="border-2 border-[#0009FF] text-[#0009FF] bg-white group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white px-4 py-1 rounded-[20px] font-[800] text-[14px] transition-colors duration-300">
                                         JETZT PROJEKT <br />
                                         STARTEN
                                         </motion.button>

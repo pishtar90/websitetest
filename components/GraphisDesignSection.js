@@ -51,7 +51,7 @@ const GraphicDesignSection = () => {
 
   return (
     <motion.section
-      className="font-matt relative flex flex-col lg:flex-row items-center justify-between bg-[#FAFAFA] p-6 sm:p-8 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] group transition-all duration-300 hover:bg-[conic-gradient(from_187deg_at_16.05%_158.56%,_#CFFF49_0%,_#E24125_180deg,_#0009FF_360deg)]"
+      className="font-matt relative flex flex-col lg:flex-row items-center justify-between bg-[#FAFAFA] p-6 sm:p-8 rounded-[20px] max-w-[1280px] mx-auto my-8 lg:h-[620px] group transition-all duration-300 hover-radial-gradient-container"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       initial="hidden"
@@ -83,24 +83,23 @@ const GraphicDesignSection = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] transition-colors duration-300 group-hover:text-white ">
-
+        <h2 className="font-matt text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-[700] lg:leading-[80px] transition-colors duration-300 group-hover:text-white lg:mb-6">
           Graphic Design
         </h2>
-        <p className="text-[#5A585A] text-sm sm:text-base mt-6 md:text-[20px] md:font-bold leading-relaxed transition-colors duration-300 group-hover:text-white">
+        <p className="text-black text-sm sm:text-base mt-6 md:text-[20px] md:font-[700] leading-relaxed transition-colors duration-300 group-hover:text-white">
           Visuelle Kommunikation, die Eindruck macht.
         </p>
-        <p className="text-[#5A585A] mb-6 font-matt font-[20px] leading-[33px] transition-colors duration-300 group-hover:text-white">
+        <p className="text-black mb-6 font-matt text-[20px] font-[300] leading-[33px] transition-colors duration-300 group-hover:text-white">
          
 Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren und Ihre Marke im Gedächtnis bleiben lassen. Ob Logo, komplette Markenidentität, Print oder Digital - wir liefern durchdachte und frische Ideen, die Ihre Zielgruppe begeistern.
         </p>
-        <p className="text-[#5A585A] text-sm sm:text-base md:text-[20px] md:font-bold leading-relaxed transition-colors duration-300 group-hover:text-white">
+        <p className="text-black text-sm sm:text-base md:text-[20px] md:font-[700] leading-relaxed transition-colors duration-300 group-hover:text-white">
           Zeigen Sie Ihre Marke von ihrer besten Seite.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
           <Link href="/services/graphicdesign">
             <motion.button
-              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-2 rounded-[20px] text-sm sm:text-base font-extrabold transition-all duration-300 group-hover:border-white group-hover:text-[#0009FF] group-hover:bg-white"
+              className="font-matt border-2 border-[#0009FF] text-white bg-[#0009FF] px-4 py-1 rounded-[20px] text-sm sm:text-base font-[800] text-[14px]  group-hover:border-black group-hover:text-white group-hover:bg-black"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -110,7 +109,7 @@ Unser kreatives Team gestaltet Designs, die Ihre Botschaft klar transportieren u
           </Link>
           <Link href="/contact">
             <motion.button
-              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-2 rounded-[20px] text-sm sm:text-base font-extrabold transition-all duration-300 group-hover:bg-transparent group-hover:text-white group-hover:border-white"
+              className="font-matt border-2 border-[#0009FF] text-[#0009FF] bg-white px-4 py-1 rounded-[20px] text-sm sm:text-base font-[800] text-[14px]  group-hover:bg-white group-hover:text-[#0009FF] group-hover:border-white"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
