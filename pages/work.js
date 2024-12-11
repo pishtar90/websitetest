@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import secondImage from '/images/costum-normal-2.png';
 import secondImage2 from '/images/costum-hover.png';
 import firstImage from '/images/website-normal.png';
@@ -10,78 +9,98 @@ import firstImage2 from '/images/website-hover.png';
 import figure from '/images/the-eksperts-book.png';
 import figure2 from '/images/the-eksperts-book-hover.png';
 
-// Animation Variants
-const sectionVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: "easeOut" } },
-};
+// Array of services for clean code
+const services = [
+  {
+    title: "Salesforce",
+    description: "Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
+    detail: "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen.",
+    link: "/services/salesforce",
+    imageDefault: firstImage,
+    imageHover: firstImage2
+  },
+  {
+    title: "Website",
+    description: "Ihre digitale Visitenkarte – modern, effizient und einzigartig.",
+    detail: "Wir gestalten Websites, die gut aussehen und performen.",
+    link: "/services/website",
+    imageDefault: firstImage,
+    imageHover: firstImage2
+  },
+  {
+    title: "Custom Development",
+    description: "Individuelle Softwarelösungen für einzigartige Anforderungen.",
+    detail: "Wir entwickeln skalierbare Anwendungen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    link: "/services/costumdevelopment",
+    imageDefault: secondImage,
+    imageHover: secondImage2
+  },
+  {
+    title: "Book Your Ekspert",
+    description: "Ihre Expertise – flexibel und auf Abruf.",
+    detail: "Mit unserem Service buchen Sie Experten individuell und flexibel.",
+    link: "/services/bookyourekspert",
+    imageDefault: figure,
+    imageHover: figure2
+  },
+];
 
 const ServicesSection = () => {
-  const sections = [
-    {
-      title: "Salesforce",
-      description: "Ihr Partner für individuelle und nachhaltige Salesforce Lösungen.",
-      details:
-        "Als offizieller Salesforce-Partner helfen wir Ihnen, das volle Potenzial von Salesforce zu nutzen. Ob Neuimplementierung, Optimierung oder massgeschneiderte Integrationen – wir stehen Ihnen zur Seite.",
-      link: "/services/salesforce",
-    },
-    {
-      title: "Website",
-      description: "Ihre digitale Visitenkarte – modern, effizient und einzigartig.",
-      details:
-        "Wir gestalten Websites, die gut aussehen und performen – ob Unternehmensseite, E-Commerce oder Portfolio. Optimiert für SEO und Performance.",
-      link: "/services/website",
-    },
-    {
-      title: "Custom Development",
-      description: "Individuelle Softwarelösungen für einzigartige Anforderungen.",
-      details:
-        "Wir entwickeln skalierbare und zukunftssichere Anwendungen, die perfekt auf Ihre Bedürfnisse zugeschnitten sind.",
-      link: "/services/customdevelopment",
-    },
-    {
-      title: "Book Your Ekspert",
-      description: "Ihre Expertise – flexibel und auf Abruf.",
-      details:
-        "Buchen Sie erfahrene Fachkräfte, die Ihre Projekte individuell und flexibel voranbringen.",
-      link: "/services/bookyourekspert",
-    },
-  ];
-
-  const [currentSection, setCurrentSection] = useState(0);
+  const [activeSection, setActiveSection] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
+      const scrollPosition = window.scrollY;
       const sectionHeight = window.innerHeight;
-      const scrollY = window.scrollY;
-      const current = Math.min(Math.floor(scrollY / sectionHeight), sections.length - 1);
-      setCurrentSection(current);
+
+      // Set active section based on scroll
+      const newActiveSection = Math.floor(scrollPosition / sectionHeight);
+      setActiveSection(newActiveSection);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="relative h-screen">
-      {sections.map((section, index) => (
-        <motion.section
+    <div className="relative">
+      {services.map((service, index) => (
+        <section
           key={index}
-          className={`absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center px-8 text-center ${
-            index === currentSection ? "block" : "hidden"
-          }`}
-          initial="hidden"
-          animate={index === currentSection ? "visible" : "hidden"}
-          variants={sectionVariants}
+          className={`h-screen flex flex-col items-center justify-center transition-opacity duration-700 ${
+            activeSection === index ? "opacity-100" : "opacity-0"
+          } absolute top-0 w-full`}
         >
-          <h2 className="text-6xl font-bold text-[#0009FF] mb-4">{section.title}</h2>
-          <p className="text-xl font-semibold mb-4">{section.description}</p>
-          <p className="max-w-2xl text-lg mb-6">{section.details}</p>
-          <Link href={section.link} passHref>
-            <button className="border-2 border-[#0009FF] text-[#0009FF] px-6 py-2 rounded-full hover:bg-[#0009FF] hover:text-white transition">
-              Mehr Erfahren
-            </button>
-          </Link>
-        </motion.section>
+          <motion.div
+            className="flex flex-col md:flex-row items-center justify-between p-8 bg-white rounded-lg max-w-[1280px] mx-auto shadow-lg"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            {/* Left Content */}
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-4xl font-bold mb-4">{service.title}</h2>
+              <p className="text-lg mb-4 font-semibold">{service.description}</p>
+              <p className="text-gray-700 mb-6">{service.detail}</p>
+              <Link href={service.link} passHref>
+                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                  Mehr Erfahren
+                </button>
+              </Link>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative w-full md:w-1/2 flex justify-center">
+              <Image
+                src={service.imageDefault}
+                alt={service.title}
+                width={400}
+                height={300}
+                className="rounded-lg object-cover"
+              />
+            </div>
+          </motion.div>
+        </section>
       ))}
     </div>
   );
