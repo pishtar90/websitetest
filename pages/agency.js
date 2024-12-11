@@ -37,7 +37,7 @@ const Agency = () => {
 {/* Header Section */}
       <div className="lg:max-w-[1280px] flex justify-center mx-auto text-center ">
         <h1
-          className="font-matt  lg:text-[80px] text-[30px] flex justify-center text-center font-[900] lg:leading-[100px] leding-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[200px] lg:mt-[200px]"
+          className="font-matt  lg:text-[80px] text-[30px] flex justify-center text-center font-[900] lg:leading-[100px] leding-[30px] tracking-[-2.99px] uppercase text-black lg:mb-[300px] lg:mt-[200px]"
           style={{
             textAlign: "center",
             textTransform: "uppercase",
@@ -51,7 +51,7 @@ const Agency = () => {
       </div>
 
       {/* Description Section */}
-      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-gray-700 lg:mb-[200px]">
+      <div className="lg:max-w-[1280px] mx-auto text-center mt-6 text-gray-700 lg:mb-[300px]">
         <p className="font-matt text-lg sm:text-xl leading-relaxed max-w-[900px] mx-auto">
         Hi, wir sind the eksperts – nicht, weil wir alles wissen oder perfekt sind, sondern weil wir jeden Tag daran arbeiten, die besten Lösungen zu finden und uns weiterzuentwickeln. Unser Name steht für den Anspruch, ständig besser zu werden.
         </p>
@@ -62,7 +62,7 @@ const Agency = () => {
 
 
       {/* Management Section */}
-      <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[200px]">
+      <div className="lg:max-w-[1280px] mx-auto px-2 py-2 lg:mb-[300px] mt-6">
         <h2 className="text-center text-black font-bold text-4xl mb-12">
           UNSER MANAGEMENT AUF EINEN BLICK
         </h2>
@@ -109,7 +109,7 @@ const Agency = () => {
             </div>
 
 
-            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-4 py-2 flex flex-col items-center text-center lg:mt-[200px] ">
+            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-4 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
                 {/* Title */}
                 <h2 className="text-center text-2xl lg:text-6xl font-bold mb-20 uppercase">
                 Unsere Werte
@@ -229,7 +229,7 @@ const Agency = () => {
                 </div>
               </section>
 
-              <section id="wie" className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:max-w-[1280px] mx-auto lg:mt-[200px]">
+              <section id="wie" className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:max-w-[1280px] mx-auto lg:mt-[300px] mt-6">
                     <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
@@ -530,7 +530,7 @@ const Agency = () => {
 
               </section>
 
-                    <section className=" lg:mt-[200px] lg:mb-[200px] px-6">
+                    <section className=" lg:mt-[300px] lg:mb-[300px] px-6 mt-6">
                         <div className="lg:max-w-[1280px] mx-auto text-center">
                           {/* Buttons */}
                           <h2 className="font-matt text-[42px] leading-[45px] font-extrabold uppercase mb-2"> Folgen Sie uns für mehr Einblicke! </h2>
