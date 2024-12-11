@@ -109,7 +109,7 @@ const Agency = () => {
             </div>
 
 
-            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-4 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
+            <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
                 {/* Title */}
                 <h2 className="text-center text-2xl lg:text-6xl font-bold mb-20 uppercase">
                 Unsere Werte
@@ -229,95 +229,91 @@ const Agency = () => {
                 </div>
               </section>
 
-              <section id="wie" className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:max-w-[1280px] mx-auto lg:mt-[300px] mt-6">
-                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center ">
+              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-4 py-2 lg:min-w-[1280px] mx-auto lg:pt-[300px]">
+                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700 ">
-                        Unser Ansatz basiert auf vier zentralen Säulen, die eine nahtlose Zusammenarbeit und nachhaltige Ergebnisse gewährleisten. Vom Verstehen eurer individuellen Anforderungen, über die visuelle und technische Umsetzung bis hin zu einer langfristigen Partnerschaft begleiten wir euch Schritt für Schritt. Gemeinsam, in enger Kooperation, entwickeln wir die beste Lösung, die nicht nur eure aktuellen Bedürfnisse erfüllt, sondern auch zukunftsfähig bleibt. Jede Phase ist dabei auf Zusammenarbeit und Qualität ausgerichtet, um euch einen nachhaltigen Mehrwert zu bieten.</p>
+                        Unser Ansatz basiert auf vier zentralen Säulen, die eine nahtlose Zusammenarbeit und nachhaltige Ergebnisse gewährleisten. Vom Verstehen eurer individuellen Anforderungen, über die visuelle und technische Umsetzung bis hin zu einer langfristigen Partnerschaft begleiten wir euch Schritt für Schritt. Gemeinsam, in enger Kooperation, entwickeln wir die beste Lösung, die nicht nur eure aktuellen Bedürfnisse erfüllt, sondern auch zukunftsfähig bleibt. Jede Phase ist dabei auf Zusammenarbeit und Qualität ausgerichtet, um euch einen nachhaltigen Mehrwert zu bieten.                        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
                         <img
-                        src="/images/theeksperts-pillar.png" 
+                        src="/images/all 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-full lg:h-auto lg:ml-2"
+                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-12"
                         />
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-10  lg:max-w-[1280px] mx-auto">
-                    <div className="flex-1 mt-8 md:mt-0 flex justify-center lg:mr-[10px]">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2  lg:min-w-[1280px] mx-auto">
+                    <div className="flex-1 mt-8 md:mt-0 flex justify-center">
                         <img
-                        src="/images/theeksperts-blue.png" 
+                        src="/images/blue 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[800px] lg:h-[600px] lg:mr-10"
+                        className="w-full lg:w-[700px] lg:h-[700px] lg:mr-10"
                         />
                     </div>
 
-                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
+                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Verstehen und Kommunikation – Die Basis für euren Erfolg
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
-                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.
-                        </p>
+                        Alles beginnt mit einer klaren und offenen Kommunikation. Wir analysieren eure Anforderungen, verstehen eure individuellen Herausforderungen und definieren gemeinsam die Ziele. Durch Consulting, Business-Analyse und strategische Planung legen wir den Grundstein für massgeschneiderte Lösungen, die eure spezifischen Bedürfnisse widerspiegeln.                        </p>
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-2 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         UI/UX – Benutzerzentrierte Gestaltung für eure Lösung
                         </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
-                        Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.
-                        </p>
+                        Im nächsten Schritt gestalten wir das Look-and-Feel eurer Lösung. Wir entwickeln Prototypen, optimieren Prozesse und entwerfen ein ansprechendes, intuitives Design. Unser Ziel ist es, dass eure Website, Software oder andere Plattformen nicht nur ästhetisch überzeugen, sondern auch funktional und benutzerfreundlich sind, um den höchsten Ansprüchen gerecht zu werden.                        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
                         <img
-                        src="/images/theeksperts-yellow.png" 
+                        src="/images/yellow 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[800px] lg:h-[600px] lg:ml-14"
+                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-16"
                         />
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-2 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:mr-[10px]">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
                         <img
-                        src="/images/theeksperts-green.png" 
+                        src="/images/green 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[800px] lg:h-[600px] lg:mr-12"
+                        className="w-full lg:w-[700px] lg:h-[700px] lg:mr-12"
                         />
                     </div>
                     
-                    <div className="font-matt flex-1 lg:min-w-[500px] lg:text-left text-center">
+                    <div className="font-matt flex-1 max-w-lg lg:text-left text-center">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
-                        Technische Implementierung – Von der Idee zur Realität </h2>
+                        Technische Implementierung – Von der Idee zur Realität                        </h2>
                         <p className="font-matt lg:text-[20px] lg:leading-[33px] text-lg text-gray-700">
-                        Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.
-                        </p>
+                        Hier setzen wir eure Vision in die Tat um. Wir entwickeln leistungsfähige und skalierbare Systeme, die eure Anforderungen perfekt erfüllen. Egal ob Online-Shop, Salesforce-Instanz, Cloud-Infrastruktur oder ERP/CRM-System – wir stellen sicher, dass die technische Umsetzung stabil, effizient, sicher und zukunftssicher ist.                        </p>
                     </div>
                     </section>
 
-                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-6 md:px-2 py-10 lg:max-w-[1280px] mx-auto">
-                    <div className="font-matt flex-1 lg:min-w-[500px] text-left">
+                    <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto">
+                    <div className="font-matt flex-1 max-w-lg text-left">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Optimierung, Schulung und Support – Nachhaltige Partnerschaft
                         </h2>
                         <p className="font-matt text-lg lg:text-[20px] lg:leading-[33px] text-gray-700">
-                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.
-                        </p>
+                        Unsere Arbeit endet nicht mit der Implementierung. Wir stehen euch langfristig zur Seite, indem wir die Lösungen kontinuierlich optimieren, Schulungen anbieten und zuverlässigen Support gewährleisten. Unsere Systeme sind darauf ausgelegt, euch auch in Zukunft zu unterstützen – und wenn es Fragen gibt, sind wir immer für euch da. Unser Ziel ist es, euch eine nachhaltige und zukunftsfähige Lösung zu bieten, die langfristig Mehrwert schafft.                        </p>
                     </div>
 
-                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center lg:ml-[20px]">
+                    <div className="font-matt flex-1 mt-8 md:mt-0 flex justify-center">
                         <img
-                        src="/images/theeksperts-red.png" 
+                        src="/images/red 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[800px] lg:h-[600px] lg:ml-14"
+                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-14"
                         />
                     </div>
                     </section>
