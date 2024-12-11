@@ -111,7 +111,7 @@ const Agency = () => {
 
             <section className="font-matt lg:max-w-[1280px] mx-auto px-6 lg:px-2 py-2 flex flex-col items-center text-center lg:mt-[300px] mt-6">
                 {/* Title */}
-                <h2 className="text-center text-2xl lg:text-6xl font-bold mb-20 uppercase">
+                <h2 className="text-center text-2xl lg:text-6xl font-[900] mb-20 uppercase">
                 Unsere Werte
                 </h2>
 
@@ -129,7 +129,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-bold text-[#E24125] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#E24125] uppercase md:leading-[60px] md:text-[32px]">
                         ● LIEBE :
                       </h3>
                       <p className="text-gray-600 text-2xl max-w-[589px] md:leading-[37px] md:text-[28px] uppercase">
@@ -150,7 +150,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-bold text-[#0009FF] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#0009FF] uppercase md:leading-[60px] md:text-[32px]">
                         ● Integrität
                         :
                       </h3>
@@ -172,7 +172,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                      <h3 className="text-2xl leading-10 font-bold text-[#CFFF49] uppercase md:leading-[60px] md:text-[32px]">
+                      <h3 className="text-2xl leading-10 font-[900] text-[#CFFF49] uppercase md:leading-[60px] md:text-[32px]">
                         ● Exzellenz
                         :
                       </h3>
@@ -193,7 +193,7 @@ const Agency = () => {
                     </div>
                     {/* Text */}
                     <div className="text-left">
-                    <h3 className="text-2xl leading-10 font-bold text-[#03C319] uppercase md:leading-[60px] md:text-[32px]">
+                    <h3 className="text-2xl leading-10 font-[900] text-[#03C319] uppercase md:leading-[60px] md:text-[32px]">
                         ● Kommunikation
                         :
                       </h3>
@@ -229,7 +229,9 @@ const Agency = () => {
                 </div>
               </section>
 
-              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-4 py-2 lg:min-w-[1280px] mx-auto lg:pt-[300px]">
+
+              
+              <section className="font-matt flex flex-col md:flex-row items-center justify-between px-4 md:px-2 py-2 lg:min-w-[1280px] mx-auto lg:pt-[300px]">
                     <div className="font-matt flex-1 max-w-lg lg:text-left text-center ">
                         <h2 className="font-matt text-2xl md:text-[28px] md:leading-[37px] font-extrabold text-black mb-4 uppercase">
                         Unsere 4 Säulen – Ein ganzheitlicher Ansatz
@@ -242,7 +244,7 @@ const Agency = () => {
                         <img
                         src="/images/all 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-12"
+                        className="w-full lg:w-[750px] lg:h-[700px] "
                         />
                     </div>
                     </section>
@@ -252,7 +254,7 @@ const Agency = () => {
                         <img
                         src="/images/blue 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[700px] lg:h-[700px] lg:mr-10"
+                        className="w-full lg:w-[750px] lg:h-[700px] "
                         />
                     </div>
 
@@ -278,7 +280,7 @@ const Agency = () => {
                         <img
                         src="/images/yellow 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-16"
+                        className="w-full lg:w-[750px] lg:h-[700px] "
                         />
                     </div>
                     </section>
@@ -288,7 +290,7 @@ const Agency = () => {
                         <img
                         src="/images/green 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[700px] lg:h-[700px] lg:mr-12"
+                        className="w-full lg:w-[750px] lg:h-[700px] "
                         />
                     </div>
                     
@@ -313,7 +315,7 @@ const Agency = () => {
                         <img
                         src="/images/red 1.png" 
                         alt="Info Section Image"
-                        className="w-full lg:w-[700px] lg:h-[700px] lg:ml-14"
+                        className="w-full lg:w-[750px] lg:h-[700px]"
                         />
                     </div>
                     </section>
